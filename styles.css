@@ -1,0 +1,522 @@
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("assets/fonts/CartographCF-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cartograph CF";
+  src: url("assets/fonts/CartographCF-RegularItalic-1.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("assets/fonts/wotfard-light-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("assets/fonts/wotfard-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("assets/fonts/wotfard-semibold-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Wotfard", sans-serif;
+  background-color: #faf5ed;
+  color: #111111;
+  line-height: 1.7;
+  padding-top: 200px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #faf5ed;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 52rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.nav-link:hover {
+  color: #111112;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 60px;
+}
+
+main {
+  max-width: 52rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personal-section {
+  background-color: #397253;
+  padding: 4rem 0;
+  margin-bottom: 0;
+}
+
+.personal-container {
+  max-width: 52rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personal-section h1,
+.personal-section h2,
+.personal-section h3,
+.personal-section h4,
+.personal-section h5,
+.personal-section h6,
+.personal-section p,
+.personal-section a,
+.personal-section li,
+.personal-section span {
+  color: white;
+}
+
+.personal-section .flourish-text {
+  color: white;
+}
+
+.footer {
+  background-color: #2a5a3f;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.image-stack {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  position: absolute;
+  width: min(280px, 45vw);
+  height: min(200px, 32vw);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid #eee;
+}
+
+.image-container:nth-child(1) {
+  transform: rotate(-6deg) translate(-60%, -30%);
+  z-index: 3;
+}
+
+.image-container:nth-child(2) {
+  transform: rotate(4deg) translate(50%, 15%);
+  z-index: 2;
+}
+
+.image-container:nth-child(3) {
+  transform: rotate(-2deg) translate(-35%, 60%);
+  z-index: 1;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section#hero {
+  margin-top: 80px;
+}
+
+.content-pairing {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 8rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+.content-pairing h2 {
+  margin: 0;
+  justify-self: start;
+}
+
+.content-pairing ul {
+  min-width: unset;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-with-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Wotfard", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: "Wotfard", Arial, sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: "Wotfard", Arial, sans-serif;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: inherit;
+  font-size: 1.25rem;
+}
+ul {
+  min-width: 400px;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: chocolate;
+}
+
+.hero-subline {
+  font-size: 1.9rem;
+}
+
+.flourish-text {
+  font-family: "Cartograph CF", serif;
+  font-style: italic;
+  font-weight: bold;
+  color: chocolate;
+  font-size: 1.25rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.company-name {
+  color: chocolate;
+}
+
+.role-period {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.role {
+  color: #111111;
+  font-family: "Cartograph CF", Arial, sans-serif;
+}
+
+.period {
+  color: #111111;
+  font-size: 0.9rem;
+  font-family: "Cartograph CF", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  nav {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 95%;
+  }
+
+  .nav-link-wrapper {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  .nav-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  .personal-container {
+    width: 95%;
+  }
+
+  .content-pairing {
+    grid-template-columns: 150px 1fr;
+    gap: 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p,
+  a,
+  li {
+    font-size: 1.1rem;
+  }
+
+  section#hero {
+    margin-top: 40px;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .content-pairing {
+    margin-bottom: 3rem;
+  }
+
+  .image-stack {
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: min(300px, 80vw);
+    height: min(200px, 53vw);
+    transform: none !important;
+  }
+
+  .image-container:nth-child(1),
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    position: relative;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 100px;
+
+    nav {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      width: 100%; /* Use full width minus padding */
+      padding: 0 1rem; /* Add horizontal padding */
+    }
+
+    /* NAV LINKS: Further reduce sizes and gaps */
+    .nav-link-wrapper {
+      gap: 1rem; /* Further reduce gap */
+    }
+
+    .nav-link {
+      font-size: 1.1rem; /* Further reduce font size */
+    }
+
+    /* NAV LOGO: Smallest size for mobile */
+    .nav-logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* MAIN: Full width with padding */
+    main {
+      width: 100%;
+      padding: 0 1rem; /* Add horizontal padding instead of margin */
+    }
+
+    .personal-container {
+      width: 100%;
+      padding: 0 1rem;
+    } /* CONTENT PAIRING: Stack vertically on mobile */
+    .content-pairing {
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 1rem; /* Much smaller gap */
+      text-align: left; /* Ensure left alignment */
+    }
+
+    /* UL: Remove fixed width completely */
+    ul {
+      min-width: unset; /* Remove the 400px constraint entirely */
+    }
+
+    /* TYPOGRAPHY: Mobile-friendly sizes */
+    h1 {
+      font-size: 1.75rem; /* Further reduce for mobile */
+      line-height: 1.3; /* Tighter line height */
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem; /* Add some spacing when stacked */
+    }
+
+    p,
+    a,
+    li {
+      font-size: 1rem; /* Standard mobile size */
+    }
+
+    .hero-subline {
+      font-size: 1.5rem; /* Reduce from 1.9rem */
+    }
+
+    .flourish-text {
+      font-size: 1rem; /* Reduce from 1.25rem */
+    }
+
+    /* SECTIONS: Minimal spacing for mobile */
+    section {
+      margin-bottom: 2rem; /* Further reduce */
+    }
+
+    .content-pairing {
+      margin-bottom: 2rem; /* Further reduce */
+    }
+
+    section#hero {
+      margin-top: 20px; /* Minimal top margin */
+    }
+
+    /* ICONS: Ensure they don't get too small */
+    .icon-link {
+      width: 28px; /* Slightly smaller but still visible */
+      height: 28px;
+    }
+
+    .role-period {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .image-stack {
+      height: auto;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .image-container {
+      position: relative;
+      width: 250px;
+      height: 180px;
+      transform: none !important;
+    }
+
+    .image-container:nth-child(1),
+    .image-container:nth-child(2),
+    .image-container:nth-child(3) {
+      position: relative;
+      transform: none !important;
+    }
+  }
+}
