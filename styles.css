@@ -205,7 +205,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   margin: 2rem 0;
   width: 100%;
   max-width: 600px;
@@ -272,6 +272,7 @@ section#hero {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 4px;
 }
 
 .link-with-icon {
@@ -326,12 +327,32 @@ a {
 }
 ul {
   min-width: 400px;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
+  position: relative;
+  padding-left: 2rem;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   color: chocolate;
+}
+
+li::before {
+  content: "–";
+  color: chocolate;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.meta-list {
+  font-size: 1rem;
+}
+.project-badges li::before {
+  display: none;
 }
 
 .small-text {
@@ -374,18 +395,13 @@ li {
   line-height: 1.6;
 }
 
-.project-meta {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
 .project-type,
 .project-year {
   font-family: "Cartograph CF", serif;
   font-style: italic;
   font-size: 0.9rem;
   color: #666666;
+  padding-top: 4px;
 }
 
 .case-studies-list {
@@ -426,12 +442,165 @@ li {
   color: #8b4513;
 }
 
+.projects {
+  margin-bottom: 4rem;
+}
+
+.filter-bar {
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+.project-year {
+  font-family: "Cartograph CF", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: chocolate;
+  margin: 0;
+}
+
+.project-content .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-badges {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.project-badges li {
+  position: static;
+  padding-left: 0;
+  background: #f5f5f5;
+  color: #666666;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  white-space: nowrap;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: chocolate;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: rgb(195, 97, 27);
+}
+
+.read-more-btn .chevron {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.read-more-btn.expanded .chevron {
+  transform: rotate(180deg);
+}
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    padding-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.expandable-content.expanded {
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-meta p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-meta strong {
+  color: #111111;
+  font-weight: 600;
+}
+
+.project-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-media video,
+.project-media img {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .flourish-text {
   font-family: "Cartograph CF", serif;
   font-style: italic;
   font-weight: bold;
   color: chocolate;
   font-size: 1.25rem;
+}
+
+.site-notice {
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  color: #92400e;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .experience-list {
@@ -537,6 +706,17 @@ li {
 
   .case-study-item {
     padding: 1.5rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-year {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .image-stack {

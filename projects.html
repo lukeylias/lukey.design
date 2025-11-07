@@ -22,77 +22,224 @@
       <section id="#hero">
         <p class="flourish-text">My work,</p>
         <h1>
-          A selection of projects I've worked on, from product design to
-          development
+          Projects I've worked on, things I'm building, and other stuff I find
+          interesting
         </h1>
+        <p class="site-notice">
+          I'm still in the process of building out this site, converting from my
+          old portfolio. You'll find not all my projects are here, and content
+          will be missing.
+        </p>
       </section>
 
-      <section id="#projects-intro">
-        <div>
-          <p>
-            Here are some of the projects I've been involved in, ranging from
-            product design challenges to technical development work. Each
-            project represents a different aspect of my design and development
-            journey.
-          </p>
+      <!-- Projects Section -->
+      <section class="projects">
+        <div class="filter-bar">
+          <!-- TODO: filter by year or category -->
         </div>
-      </section>
 
-      <!-- Project Grid Section -->
-      <section id="#project-grid">
-        <div class="content-pairing">
-          <h2>Featured Projects</h2>
-          <div class="projects-list">
-            <!-- Add your projects here -->
-            <div class="project-item">
-              <h3 class="project-title">Project Name</h3>
-              <p class="project-description">
-                Brief description of what this project involved and your role in
-                it.
-              </p>
-              <div class="project-meta">
-                <span class="project-type">Product Design</span>
-                <span class="project-year">2024</span>
-              </div>
+        <div class="project">
+          <p class="project-year">2023</p>
+
+          <div class="project-content">
+            <h3>Accessibility at nib</h3>
+
+            <ul class="project-badges">
+              <li>Accessibility</li>
+              <li>Product Design</li>
+              <li>Web</li>
+            </ul>
+
+            <p class="description">
+              Internal accessibility website for nib employees to learn about
+              accessibility and how to implement it in their work.
+            </p>
+            <div class="project-media">
+              <iframe
+                src="https://www.loom.com/embed/7fc3ab417c594a879f9bf007719fd8cd?sid=7d8d4e5a-8a9b-4a42-9c8b-2e1f6a3b8c5d"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style="width: 100%; height: 400px; border-radius: 8px"
+              >
+              </iframe>
             </div>
 
-            <div class="project-item">
-              <h3 class="project-title">Another Project</h3>
-              <p class="project-description">
-                Description of another project you've worked on.
-              </p>
-              <div class="project-meta">
-                <span class="project-type">Development</span>
-                <span class="project-year">2023</span>
+            <div class="expandable-content" id="project-meta-1">
+              <div class="content-pairing">
+                <h2>Impact</h2>
+                <ul>
+                  <li class="meta-list">
+                    Adopted by majority of nib product teams
+                  </li>
+                  <li class="meta-list">
+                    Single source of truth for accessibility guidelines
+                  </li>
+                </ul>
               </div>
+              <div class="content-pairing">
+                <h2>Key Learnings:</h2>
+                <ul>
+                  <li class="meta-list">
+                    It's hard to get momentum on accessibility without buy in
+                  </li>
+                  <li class="meta-list">
+                    People are often usure where to start with accessibility,
+                    having open conversations helps
+                  </li>
+                </ul>
+              </div>
+              <p>
+                I'll continue to add more details around this project soon. At
+                the moment, it's very high-level.
+              </p>
             </div>
 
-            <div class="project-item">
-              <h3 class="project-title">Third Project</h3>
-              <p class="project-description">
-                Yet another project showcasing your skills.
-              </p>
-              <div class="project-meta">
-                <span class="project-type">UX Design</span>
-                <span class="project-year">2023</span>
-              </div>
-            </div>
+            <button class="read-more-btn" data-target="project-meta-1">
+              Read More
+              <svg
+                class="chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
-      </section>
+        <div class="project">
+          <p class="project-year">2022</p>
 
-      <!-- Case Study Section -->
-      <section id="#case-studies">
-        <div class="content-pairing">
-          <h2>Case Studies</h2>
-          <div class="case-studies-list">
-            <div class="case-study-item">
-              <h3 class="case-study-title">Deep Dive: Project Name</h3>
-              <p class="case-study-description">
-                A detailed look at the process, challenges, and solutions for
-                one of your major projects.
+          <div class="project-content">
+            <h3>Secure messaging</h3>
+
+            <ul class="project-badges">
+              <li>Product Design</li>
+              <li>Web</li>
+              <li>iOS and Android</li>
+              <li>Lead designer</li>
+            </ul>
+
+            <p class="description">
+              Delivering a messaging feature to help customers reach out when
+              they need support. I was the lead designer in delivering a chat
+              feature that customers could a message to customer support in
+              their app. My favourite feature I had the chance to work on.
+            </p>
+            <div class="project-media">
+              <img src="assets/secureMessaging.png" alt="" />
+            </div>
+
+            <div class="expandable-content" id="project-meta-2">
+              <div class="content-pairing">
+                <h2>Impact</h2>
+                <ul>
+                  <li class="meta-list">
+                    Over 90% satistifaction from users in testing
+                  </li>
+                  <li class="meta-list">
+                    Estimated 30% reduction in customer support calls
+                  </li>
+                  <li class="meta-list">
+                    Scalable design across Web, iOS and Android
+                  </li>
+                </ul>
+              </div>
+              <div class="content-pairing">
+                <h2>Key Learnings:</h2>
+                <ul>
+                  <li class="meta-list">
+                    People are hesitant about using chatbots inside their
+                    banking apps
+                  </li>
+                  <li class="meta-list">
+                    Chats can be a high security risk with people giving over
+                    personal details
+                  </li>
+                  <li class="meta-list">
+                    When building the same feature across multiple platforms,
+                    especially native applications, try and use what comes out
+                    of the box. That way, it's easier to maintain in the long
+                    term
+                  </li>
+                  <li class="meta-list">
+                    People would rather talk to a real human than a chatbot
+                  </li>
+                </ul>
+              </div>
+              <p>
+                I loved being a part of this project for a few reasons, We got
+                to build messaging in a banking app with a fantastic team.
+                Banking apps tend to do help and support poorly, particularly
+                from within their apps, so let’s do it better. Greater is known
+                for its in-person customer service. How can we bring that
+                feeling into the app?
               </p>
-              <a href="#" class="case-study-link">Read Case Study →</a>
+              <p>
+                This was a rewarding project because, through user testing, we
+                found this feature would aid a wide range of customers through
+                the different challenges and problems they may experience.
+              </p>
+              <p>
+                For a deeper dive, feel free to check out
+                <a href="">this figjam file</a> which documents the journey and
+                a high level.
+              </p>
+              <p>
+                <span class="flourish-text"
+                  >"I would change banks for this"</span
+                >
+                – User Testing participant / Non-Greater customer.
+              </p>
+            </div>
+
+            <button class="read-more-btn" data-target="project-meta-2">
+              Read More
+              <svg
+                class="chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="project">
+          <p class="project-year">2022</p>
+
+          <div class="project-content">
+            <h3>iOS Dynamic Type Scale</h3>
+
+            <ul class="project-badges">
+              <li>iOS and Android</li>
+              <li>Figma</li>
+            </ul>
+
+            <p class="description">
+              While working at Greater Bank, I had the opportunity to learn a
+              bit about iOS development and while doing that, learned a bit more
+              about the accessibility features in iPhones and around dynamic
+              type.
+            </p>
+            <p class="description">
+              This Figma file was a way to help people understand how dynamic
+              type changes user fonts
+            </p>
+            <a href="https://www.figma.com/community/file/1286182397891733539">
+              Check it out here</a
+            >
+            <div class="project-media">
+              <img src="assets/dynamicType.png" alt="" />
             </div>
           </div>
         </div>
@@ -158,5 +305,64 @@
     <footer class="footer">
       <p>&copy; 2025 Luke Ylias. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Expandable content functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const readMoreBtns = document.querySelectorAll(".read-more-btn");
+
+        readMoreBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const targetId = btn.getAttribute("data-target");
+            const expandableContent = document.getElementById(targetId);
+
+            // Toggle expanded state
+            const isExpanded = btn.classList.contains("expanded");
+
+            if (isExpanded) {
+              // Collapse - animate to 0 height
+              expandableContent.style.maxHeight =
+                expandableContent.scrollHeight + "px";
+
+              // Force a reflow to ensure the above height is set
+              expandableContent.offsetHeight;
+
+              // Now animate to 0
+              expandableContent.style.maxHeight = "0px";
+
+              // Update classes and button text
+              btn.classList.remove("expanded");
+              expandableContent.classList.remove("expanded");
+              btn.innerHTML =
+                'Read More <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"></polyline></svg>';
+            } else {
+              // Expand - calculate actual content height
+              expandableContent.style.maxHeight = "none";
+              const height = expandableContent.scrollHeight;
+              expandableContent.style.maxHeight = "0px";
+
+              // Force a reflow
+              expandableContent.offsetHeight;
+
+              // Now animate to the actual height
+              expandableContent.style.maxHeight = height + "px";
+
+              // Update classes and button text
+              btn.classList.add("expanded");
+              expandableContent.classList.add("expanded");
+              btn.innerHTML =
+                'Show Less <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"></polyline></svg>';
+
+              // After animation completes, set to auto for content that might change
+              setTimeout(() => {
+                if (expandableContent.classList.contains("expanded")) {
+                  expandableContent.style.maxHeight = "none";
+                }
+              }, 400); // Match CSS transition duration
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
