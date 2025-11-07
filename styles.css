@@ -93,6 +93,13 @@ nav {
   text-underline-offset: 6px;
 }
 
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: chocolate;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
 .nav-link:hover {
   color: #111112;
 }
@@ -137,6 +144,48 @@ main {
 
 .personal-section .flourish-text {
   color: white;
+}
+
+.social-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.icon-link svg {
+  width: 20px;
+  height: 20px;
+  color: #111111;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.link-with-icon:hover svg {
+  color: #666666;
+}
+
+.social-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #111111;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.social-link:hover .social-icon svg {
+  color: #666666;
 }
 
 .footer {
@@ -190,6 +239,13 @@ main {
   z-index: 1;
 }
 
+.social-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  margin-top: 2rem;
+}
+
 section {
   margin-bottom: 4rem;
 }
@@ -222,7 +278,7 @@ section#hero {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .icon-link {
@@ -278,8 +334,96 @@ li {
   color: chocolate;
 }
 
+.small-text {
+  font-size: 1rem;
+  font-family: "Cartograph CF", sans-serif;
+  font-style: italic;
+  color: chocolate;
+}
+
 .hero-subline {
   font-size: 1.9rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: chocolate;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-meta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-type,
+.project-year {
+  font-family: "Cartograph CF", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.case-studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.case-study-item {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid chocolate;
+}
+
+.case-study-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.case-study-description {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.case-study-link {
+  color: chocolate;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.case-study-link:hover {
+  color: #8b4513;
 }
 
 .flourish-text {
@@ -379,6 +523,20 @@ li {
 
   .content-pairing {
     margin-bottom: 3rem;
+  }
+
+  .projects-list {
+    gap: 2rem;
+  }
+
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .case-study-item {
+    padding: 1.5rem;
   }
 
   .image-stack {
