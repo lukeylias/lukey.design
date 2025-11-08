@@ -13,22 +13,26 @@
         <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
         <div class="nav-link-wrapper">
           <a href="/" class="nav-link">Home</a>
-          <a href="/projects" class="nav-link active">Projects</a>
+          <a href="/projects" class="nav-link active">Stories</a>
         </div>
       </nav>
     </header>
     <main>
       <!-- hero section  -->
       <section id="#hero">
-        <p class="flourish-text">My work,</p>
+        <p class="flourish-text">Stay awhile and listen,</p>
         <h1>
-          Projects I've worked on, things I'm building, and other stuff I find
-          interesting
+          Short stories about my adventures in design, development, and
+          everything in between
         </h1>
+        <p>
+          A mix of case studies, experiments, and reflections covering design,
+          development, side projects, and the occasional
+          <span class="flourish-text">off-topic</span> rant.
+        </p>
         <p class="site-notice">
-          I'm still in the process of building out this site, converting from my
-          old portfolio. You'll find not all my projects are here, and content
-          will be missing.
+          Just a heads up, I'm still in the process of building out this site,
+          converting from my old portfolio. So it's a bit sparse right now!
         </p>
       </section>
 
@@ -96,19 +100,8 @@
               </p>
             </div>
 
-            <button class="read-more-btn" data-target="project-meta-1">
-              Read More
-              <svg
-                class="chevron"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6,9 12,15 18,9"></polyline>
-              </svg>
+            <button class="read-more-btn" data-modal="project-meta-1">
+              View Details
             </button>
           </div>
         </div>
@@ -126,18 +119,45 @@
             </ul>
 
             <p class="description">
-              Delivering a messaging feature to help customers reach out when
-              they need support. I was the lead designer in delivering a chat
-              feature that customers could a message to customer support in
-              their app. My favourite feature I had the chance to work on.
+              I was the lead designer on a project to introduce in-app messaging
+              so customers could reach support directly from their banking app —
+              one of my favourite projects to date.
             </p>
             <div class="project-media">
               <img src="assets/secureMessaging.png" alt="" />
             </div>
 
             <div class="expandable-content" id="project-meta-2">
+              <p class="description">
+                We wanted to bring Greater’s reputation for friendly, in-person
+                service into a digital context and make getting help feel more
+                personal and immediate.
+              </p>
+              <p class="description">
+                This project was deeply rewarding — we helped make banking
+                assistance more human and accessible. Through testing, we found
+                the feature supported a wide range of customers who faced
+                different challenges and accessibility needs.
+              </p>
+              <p class="description">
+                <span class="flourish-text"
+                  >"I would change banks for this"</span
+                >
+                – User Testing participant / Non-Greater customer.
+              </p>
+              <div>
+                <p class="description">
+                  For a deeper dive, you can view the full design journey and
+                  documentation in this
+                  <a href="" class="description">figjam file</a>
+                </p>
+              </div>
+
+              <div class="modal-divider"></div>
+
               <div class="content-pairing">
                 <h2>Impact</h2>
+
                 <ul>
                   <li class="meta-list">
                     Over 90% satistifaction from users in testing
@@ -172,45 +192,10 @@
                   </li>
                 </ul>
               </div>
-              <p>
-                I loved being a part of this project for a few reasons, We got
-                to build messaging in a banking app with a fantastic team.
-                Banking apps tend to do help and support poorly, particularly
-                from within their apps, so let’s do it better. Greater is known
-                for its in-person customer service. How can we bring that
-                feeling into the app?
-              </p>
-              <p>
-                This was a rewarding project because, through user testing, we
-                found this feature would aid a wide range of customers through
-                the different challenges and problems they may experience.
-              </p>
-              <p>
-                For a deeper dive, feel free to check out
-                <a href="">this figjam file</a> which documents the journey and
-                a high level.
-              </p>
-              <p>
-                <span class="flourish-text"
-                  >"I would change banks for this"</span
-                >
-                – User Testing participant / Non-Greater customer.
-              </p>
             </div>
 
-            <button class="read-more-btn" data-target="project-meta-2">
-              Read More
-              <svg
-                class="chevron"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6,9 12,15 18,9"></polyline>
-              </svg>
+            <button class="read-more-btn" data-modal="project-meta-2">
+              View Details
             </button>
           </div>
         </div>
@@ -248,10 +233,9 @@
 
     <section class="personal-section">
       <div class="personal-container">
-        <h2>Got a question?</h2>
+        <h2>Thanks for reading</h2>
         <p>
-          Feel free to reach out, happy to chat about design, accessibility, or
-          opportunities.
+          Feel free to connect with me on social media or check out my GitHub!
         </p>
         <div class="social-container">
           <div class="social-link">
@@ -306,61 +290,74 @@
       <p>&copy; 2025 Luke Ylias. All rights reserved.</p>
     </footer>
 
+    <!-- Modal Structure -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body-container">
+          <div id="modal-body">
+            <!-- Content will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
-      // Expandable content functionality
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Modal functionality
       document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("project-modal");
+        const modalBody = document.getElementById("modal-body");
+        const closeButton = document.querySelector(".modal-close");
         const readMoreBtns = document.querySelectorAll(".read-more-btn");
 
+        // Open modal when "View Details" is clicked
         readMoreBtns.forEach((btn) => {
           btn.addEventListener("click", function () {
-            const targetId = btn.getAttribute("data-target");
+            const targetId = btn.getAttribute("data-modal");
             const expandableContent = document.getElementById(targetId);
 
-            // Toggle expanded state
-            const isExpanded = btn.classList.contains("expanded");
+            // Find the project title (h3 element in the same project)
+            const projectElement = btn.closest(".project");
+            const projectTitle = projectElement.querySelector("h3").textContent;
 
-            if (isExpanded) {
-              // Collapse - animate to 0 height
-              expandableContent.style.maxHeight =
-                expandableContent.scrollHeight + "px";
-
-              // Force a reflow to ensure the above height is set
-              expandableContent.offsetHeight;
-
-              // Now animate to 0
-              expandableContent.style.maxHeight = "0px";
-
-              // Update classes and button text
-              btn.classList.remove("expanded");
-              expandableContent.classList.remove("expanded");
-              btn.innerHTML =
-                'Read More <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"></polyline></svg>';
-            } else {
-              // Expand - calculate actual content height
-              expandableContent.style.maxHeight = "none";
-              const height = expandableContent.scrollHeight;
-              expandableContent.style.maxHeight = "0px";
-
-              // Force a reflow
-              expandableContent.offsetHeight;
-
-              // Now animate to the actual height
-              expandableContent.style.maxHeight = height + "px";
-
-              // Update classes and button text
-              btn.classList.add("expanded");
-              expandableContent.classList.add("expanded");
-              btn.innerHTML =
-                'Show Less <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"></polyline></svg>';
-
-              // After animation completes, set to auto for content that might change
-              setTimeout(() => {
-                if (expandableContent.classList.contains("expanded")) {
-                  expandableContent.style.maxHeight = "none";
-                }
-              }, 400); // Match CSS transition duration
-            }
+            // Clone the content and put it in modal with title at the top
+            modalBody.innerHTML =
+              `<h1>${projectTitle}</h1>` + expandableContent.innerHTML;
+            modal.classList.add("modal-open");
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
           });
+        }); // Close modal when X is clicked
+        closeButton.addEventListener("click", function () {
+          modal.classList.remove("modal-open");
+          document.body.style.overflow = ""; // Restore scrolling
+        });
+
+        // Close modal when clicking outside content
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("modal-open");
+            document.body.style.overflow = ""; // Restore scrolling
+          }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("modal-open")) {
+            modal.classList.remove("modal-open");
+            document.body.style.overflow = ""; // Restore scrolling
+          }
         });
       });
     </script>

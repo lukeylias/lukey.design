@@ -13,7 +13,7 @@
         <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
         <div class="nav-link-wrapper">
           <a href="/" class="nav-link active">Home</a>
-          <a href="/projects" class="nav-link">Projects</a>
+          <a href="/projects" class="nav-link">Stories</a>
         </div>
       </nav>
     </header>
@@ -131,6 +131,8 @@
             <li>HTML, CSS & JS</li>
             <li>Experimentation & analytics</li>
             <li>Web accessibility</li>
+            <li>Design systems</li>
+            <li>Strategy & collaboration</li>
           </ul>
         </div>
         <div class="content-pairing">
@@ -213,12 +215,22 @@
             </div>
 
             <div class="link-with-icon">
-              <img class="icon-link" src="assets/cursor.png" alt="" />
+              <img class="icon-link" src="assets/perplexity.png" alt="" />
               <a
-                href="https://cursor.com/"
+                href="https://www.perplexity.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Cursor</a
+                >Perplexity</a
+              >
+            </div>
+
+            <div class="link-with-icon">
+              <img class="icon-link" src="assets/notebook.png" alt="" />
+              <a
+                href="https://notebooklm.google/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Notebooklm</a
               >
             </div>
           </ul>
@@ -230,14 +242,13 @@
       <div class="personal-container">
         <h2>Outside of work</h2>
         <p>
-          I enjoy spending time with my wife and our miniature schnauzer, Dolly.
-          We’re usually out walking, finding a good café, or catching a movie.
+          I enjoy spending time with my wife, EJ and our miniature schnauzer,
+          Dolly. We’re usually out walking, finding a good café, or catching a
+          movie.
         </p>
         <p>
-          Otherwise, I’m probably listening to
-          <a class="flourish-text">Saib</a> or
-          <a class="flourish-text">Wu Tang</a> and playing
-          <a class="flourish-text" href="">games</a> with friends.
+          Otherwise, I’m probably listening to Saib or Wu Tang and playing games
+          with friends.
         </p>
       </div>
       <div class="image-stack">
@@ -260,5 +271,17 @@
     <footer class="footer">
       <p>&copy; 2025 Luke Ylias. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
