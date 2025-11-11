@@ -6,25 +6,33 @@
     <title>Luke Ylias – Senior Product Designer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/assets/lyliasfavi.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <nav class="nav-wrapper">
         <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
         <div class="nav-link-wrapper">
-          <a href="/" class="nav-link active">Home</a>
-          <a href="/projects" class="nav-link">Stories</a>
+          <a href="index.html" class="nav-link active">Work</a>
+          <a href="projects.html" class="nav-link">About</a>
         </div>
       </nav>
     </header>
     <main>
       <!-- hero section  -->
       <section id="#hero">
-        <p class="flourish-text">I'm Luke,</p>
-        <h1>
-          Senior product designer, occasionally like to dabble in development
-          from time to time
-        </h1>
+        <h1>Hey I'm Luke!</h1>
+        <p class="subtitle">
+          Senior product designer at <a href="">nib</a> occasionally like to
+          dabble in development from time to time
+        </p>
+        <div class="tag-container">
+          <p>this site is a work in progress</p>
+        </div>
       </section>
       <section id="#social">
         <div class="social-container">
@@ -107,170 +115,289 @@
         </div>
       </section>
 
-      <section id="#about">
-        <div>
-          <p>
-            I bring clarity and momentum to product teams through strong
-            communication, experimentation, and technical fluency.
-          </p>
-          <p>
-            Working closely with <span class="flourish-text">designers</span>,
-            <span class="flourish-text">engineers</span>, and
-            <span class="flourish-text">stakeholders</span> to test ideas fast,
-            build with accessibility in mind, and use emerging tools like AI to
-            simplify complex problems and deliver purposeful, scalable outcomes.
-          </p>
-        </div>
-      </section>
+      <div class="section-divider"></div>
 
-      <section id="#learning">
-        <div class="content-pairing">
-          <h2>Proficient in</h2>
-          <ul>
-            <li>Product design (Figma or any tool)</li>
-            <li>HTML, CSS & JS</li>
-            <li>Experimentation & analytics</li>
-            <li>Web accessibility</li>
-            <li>Design systems</li>
-            <li>Strategy & collaboration</li>
-          </ul>
-        </div>
-        <div class="content-pairing">
-          <h2>Learning</h2>
-          <ul>
-            <li>React</li>
-            <li>API's</li>
-            <li>AI workflows / LLM integration</li>
-          </ul>
-        </div>
-      </section>
-      <section id="#work-history">
-        <div class="content-pairing">
-          <h2>Experience</h2>
-          <div class="experience-list">
-            <div class="experience-item">
-              <h3 class="company-name">nib</h3>
-              <div class="role-period">
-                <span class="role">Senior Product Designer</span>
-                <span class="period">2023 - Present</span>
+      <!-- Projects Section -->
+      <h2>Selected work</h2>
+      <section class="projects">
+        <div class="project" data-modal="project-meta-1">
+          <div class="project-media">
+            <img
+              src="assets/accessibilitynib.png"
+              alt="Accessibility at nib project placeholder"
+            />
+          </div>
+          <div class="project-details">
+            <div class="horizontal-wrapper">
+              <h3 class="project-title">Accessibility at nib</h3>
+              <div class="tag-container">
+                <p>WIP</p>
               </div>
             </div>
-
-            <div class="experience-item">
-              <h3 class="company-name">Greater Bank</h3>
-              <div class="role-period">
-                <span class="role">UX Designer</span>
-                <span class="period">2019 - 2023</span>
-              </div>
-            </div>
-
-            <div class="experience-item">
-              <h3 class="company-name">Universiy Of Newcastle</h3>
-              <div class="role-period">
-                <span class="role">UX/UI Designer</span>
-                <span class="period">2017 - 2019</span>
-              </div>
-            </div>
-            <div class="experience-item">
-              <h3 class="company-name">Great Southern Electrical</h3>
-              <div class="role-period">
-                <span class="role">Electrical technician</span>
-                <span class="period">2016 - 2017</span>
-              </div>
-            </div>
-            <p class="small-text">
-              Spent a year in between living and teaching in China
+            <p class="project-description">
+              Internal accessibility website for nib employees to learn about
+              accessibility and how to implement it in their work.
             </p>
-            <div class="experience-item">
-              <h3 class="company-name">Essential Energy</h3>
-              <div class="role-period">
-                <span class="role">Electrical technician</span>
-                <span class="period">2010 - 2015</span>
+          </div>
+
+          <div class="expandable-content" id="project-meta-1">
+            <div class="modal-video">
+              <iframe
+                src="https://www.loom.com/embed/7fc3ab417c594a879f9bf007719fd8cd?sid=7d8d4e5a-8a9b-4a42-9c8b-2e1f6a3b8c5d"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                style="
+                  width: 100%;
+                  height: 400px;
+                  border-radius: 8px;
+                  margin-bottom: 2rem;
+                "
+              >
+              </iframe>
+            </div>
+            <div class="content-pairing">
+              <h2>Impact</h2>
+              <ul>
+                <li class="meta-list">
+                  Adopted by majority of nib product teams
+                </li>
+                <li class="meta-list">
+                  Single source of truth for accessibility guidelines
+                </li>
+              </ul>
+            </div>
+            <div class="content-pairing">
+              <h2>Key Learnings:</h2>
+              <ul>
+                <li class="meta-list">
+                  It's hard to get momentum on accessibility without buy in
+                </li>
+                <li class="meta-list">
+                  People are often usure where to start with accessibility,
+                  having open conversations helps
+                </li>
+              </ul>
+            </div>
+            <p>
+              I'll continue to add more details around this project soon. At the
+              moment, it's very high-level.
+            </p>
+          </div>
+        </div>
+
+        <div class="project" data-modal="project-meta-2">
+          <div class="project-media">
+            <img
+              src="assets/secureMessaging.png"
+              alt="Secure messaging interface"
+            />
+          </div>
+          <div class="project-details">
+            <div class="horizontal-wrapper">
+              <h3 class="project-title">Secure messaging</h3>
+              <div class="tag-container">
+                <p>WIP</p>
               </div>
+            </div>
+            <p class="project-description">
+              I was the lead designer on a project to introduce in-app messaging
+              so customers could reach support directly from their banking app —
+              one of my favourite projects to date.
+            </p>
+          </div>
+
+          <div class="expandable-content" id="project-meta-2">
+            <p class="description">
+              We wanted to bring Greater’s reputation for friendly, in-person
+              service into a digital context and make getting help feel more
+              personal and immediate.
+            </p>
+            <p class="description">
+              This project was deeply rewarding — we helped make banking
+              assistance more human and accessible. Through testing, we found
+              the feature supported a wide range of customers who faced
+              different challenges and accessibility needs.
+            </p>
+            <p class="description">
+              <span class="flourish-text">"I would change banks for this"</span>
+              – User Testing participant / Non-Greater customer.
+            </p>
+            <div>
+              <p class="description">
+                For a deeper dive, you can view the full design journey and
+                documentation in this
+                <a href="" class="description">figjam file</a>
+              </p>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <div class="content-pairing">
+              <h2>Impact</h2>
+
+              <ul>
+                <li class="meta-list">
+                  Over 90% satistifaction from users in testing
+                </li>
+                <li class="meta-list">
+                  Estimated 30% reduction in customer support calls
+                </li>
+                <li class="meta-list">
+                  Scalable design across Web, iOS and Android
+                </li>
+              </ul>
+            </div>
+            <div class="content-pairing">
+              <h2>Key Learnings:</h2>
+              <ul>
+                <li class="meta-list">
+                  People are hesitant about using chatbots inside their banking
+                  apps
+                </li>
+                <li class="meta-list">
+                  Chats can be a high security risk with people giving over
+                  personal details
+                </li>
+                <li class="meta-list">
+                  When building the same feature across multiple platforms,
+                  especially native applications, try and use what comes out of
+                  the box. That way, it's easier to maintain in the long term
+                </li>
+                <li class="meta-list">
+                  People would rather talk to a real human than a chatbot
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <section id="#tools">
-        <div class="content-pairing">
-          <h2>Tools I'm loving</h2>
-          <ul>
-            <div class="link-with-icon">
-              <img class="icon-link" src="assets/granola.png" alt="" />
-              <a
-                href="https://www.granola.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Granola</a
-              >
-            </div>
-            <div class="link-with-icon">
-              <img class="icon-link" src="assets/whispr.png" alt="" />
-              <a
-                href="https://wisprflow.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Whispr Flow</a
-              >
-            </div>
 
-            <div class="link-with-icon">
-              <img class="icon-link" src="assets/perplexity.png" alt="" />
-              <a
-                href="https://www.perplexity.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Perplexity</a
-              >
+        <div class="project" data-modal="project-meta-3">
+          <div class="project-media">
+            <img
+              src="assets/dynamicType.png"
+              alt="iOS Dynamic Type Scale interface"
+            />
+          </div>
+          <div class="project-details">
+            <div class="horizontal-wrapper">
+              <h3 class="project-title">iOS Dynamic Type Scale</h3>
+              <div class="tag-container">
+                <p>WIP</p>
+              </div>
             </div>
+            <p class="project-description">
+              A Figma resource to help people understand how dynamic type
+              changes user fonts and improve accessibility in iOS development.
+            </p>
+          </div>
 
-            <div class="link-with-icon">
-              <img class="icon-link" src="assets/notebook.png" alt="" />
-              <a
-                href="https://notebooklm.google/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Notebooklm</a
-              >
+          <div class="expandable-content" id="project-meta-3">
+            <p class="description">
+              While working at Greater Bank, I had the opportunity to learn
+              about iOS development and explore the accessibility features in
+              iPhones, particularly around dynamic type.
+            </p>
+            <div class="content-pairing">
+              <h2>Impact</h2>
+              <ul>
+                <li class="meta-list">Downloaded by hundreds of designers</li>
+                <li class="meta-list">
+                  Helps teams understand iOS accessibility features
+                </li>
+              </ul>
             </div>
-          </ul>
+            <div>
+              <p class="description">
+                You can check out the full Figma file here:
+                <a
+                  href="https://www.figma.com/community/file/1286182397891733539"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="description"
+                  >Figma Community</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <section class="personal-section">
       <div class="personal-container">
-        <h2>Outside of work</h2>
+        <h2>Thanks for reading</h2>
         <p>
-          I enjoy spending time with my wife, EJ and our miniature schnauzer,
-          Dolly. We’re usually out walking, finding a good café, or catching a
-          movie.
+          Feel free to connect with me on social media or check out my GitHub!
         </p>
-        <p>
-          Otherwise, I’m probably listening to Saib or Wu Tang and playing games
-          with friends.
-        </p>
-      </div>
-      <div class="image-stack">
-        <div
-          class="image-container"
-          style="background-image: url('assets/menej.jpg')"
-        ></div>
-        <div
-          class="image-container"
-          style="background-image: url('assets/japan.jpg')"
-        ></div>
-
-        <div
-          class="image-container"
-          style="background-image: url('assets/dolly.jpg')"
-        ></div>
+        <div class="social-container social-dark">
+          <div class="social-link">
+            <div class="social-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <a
+              href="https://github.com/lukeylias"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+          <div class="social-link">
+            <div class="social-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <a
+              href="https://linkedin.com/in/lukeylias"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2025 Luke Ylias. All rights reserved.</p>
+      <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
+      <p>Designed and coded by me</p>
     </footer>
+
+    <!-- Modal Structure -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body-container">
+          <div id="modal-body">
+            <!-- Content will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       // Navbar scroll effect
@@ -281,6 +408,78 @@
         } else {
           header.classList.remove("scrolled");
         }
+      });
+
+      // Modal functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("project-modal");
+        const modalBody = document.getElementById("modal-body");
+        const closeButton = document.querySelector(".modal-close");
+
+        // Open modal when project card is clicked
+        const projectCards = document.querySelectorAll(".project");
+
+        projectCards.forEach((card) => {
+          card.addEventListener("click", function () {
+            const targetId = card.getAttribute("data-modal");
+            const expandableContent = document.getElementById(targetId);
+
+            // Skip if no expandable content exists
+            if (!expandableContent) return;
+
+            // Find the project title
+            const projectTitle =
+              card.querySelector(".project-title").textContent;
+
+            // Clone the content and put it in modal with title at the top
+            modalBody.innerHTML =
+              `<h1>${projectTitle}</h1>` + expandableContent.innerHTML;
+            modal.classList.add("modal-open");
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+          });
+        }); // Close modal when X is clicked
+        closeButton.addEventListener("click", function () {
+          modal.classList.remove("modal-open");
+          document.body.style.overflow = ""; // Restore scrolling
+        });
+
+        // Close modal when clicking outside content
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("modal-open");
+            document.body.style.overflow = ""; // Restore scrolling
+          }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("modal-open")) {
+            modal.classList.remove("modal-open");
+            document.body.style.overflow = ""; // Restore scrolling
+          }
+        });
+
+        // Page transition effect
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+
+            // Only apply transition for different pages
+            if (href !== "index.html") {
+              e.preventDefault();
+
+              // Add fade out class
+              document.body.classList.add("fade-out");
+
+              // Navigate after fade out completes
+              setTimeout(() => {
+                window.location.href = href;
+              }, 300);
+            }
+          });
+        });
       });
     </script>
   </body>
