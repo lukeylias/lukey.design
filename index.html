@@ -3,484 +3,1915 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Luke Ylias, Senior Product Designer at nib. Showcasing selected work in product design, accessibility, and user experience."
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lukey.design/" />
+    <meta property="og:title" content="Luke Ylias – Senior Product Designer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Luke Ylias, Senior Product Designer at nib. Showcasing selected work in product design, accessibility, and user experience."
+    />
+    <meta
+      property="og:image"
+      content="https://lukey.design/assets/lyliasfavi.png"
+    />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://lukey.design/" />
+    <meta name="twitter:title" content="Luke Ylias – Senior Product Designer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Luke Ylias, Senior Product Designer at nib. Showcasing selected work in product design, accessibility, and user experience."
+    />
+    <meta
+      property="twitter:image"
+      content="https://lukey.design/assets/lyliasfavi.png"
+    />
     <title>Luke Ylias – Senior Product Designer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/assets/lyliasfavi.png" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
-    <header>
-      <nav class="nav-wrapper">
-        <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
-        <div class="nav-link-wrapper">
-          <a href="index.html" class="nav-link active">Work</a>
-          <a href="projects.html" class="nav-link">About</a>
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <main class="two-column-layout">
+      <!-- Left sidebar -->
+      <aside class="left-column">
+        <div class="sidebar-content">
+          <a href="#about" class="sidebar-header" data-content="about">
+            <img
+              src="assets/lyliasfavi.png"
+              alt="Luke Ylias logo"
+              class="sidebar-logo"
+            />
+            <h1 class="sidebar-name">Luke Ylias</h1>
+          </a>
+
+          <nav class="sidebar-nav">
+            <!-- Work Section -->
+            <section class="nav-section">
+              <h2 class="nav-section-title">Work</h2>
+              <ul class="project-list">
+                <li>
+                  <a href="#nib" class="project-nav-item" data-content="nib">
+                    <img
+                      src="assets/nib.jpg"
+                      alt="nib logo"
+                      class="project-nav-icon"
+                    />
+                    <span class="project-nav-title">nib</span>
+                    <span class="project-nav-year">2023</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#greater-bank"
+                    class="project-nav-item"
+                    data-content="greater-bank"
+                  >
+                    <img
+                      src="assets/gblogo.jpg"
+                      alt="Greater Bank logo"
+                      class="project-nav-icon"
+                    />
+                    <span class="project-nav-title">Greater Bank</span>
+                    <span class="project-nav-year">2019</span>
+                  </a>
+                </li>
+                <li>
+                  <div
+                    class="project-nav-item"
+                    style="pointer-events: none; cursor: default"
+                  >
+                    <img
+                      src="assets/uonlogo.jpg"
+                      alt="University of Newcastle logo"
+                      class="project-nav-icon"
+                    />
+                    <span class="project-nav-title"
+                      >University of Newcastle</span
+                    >
+                    <span class="project-nav-year">2017</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Side Projects Section -->
+            <section class="nav-section">
+              <h2 class="nav-section-title">Side Projects</h2>
+              <ul class="project-list">
+                <li>
+                  <a
+                    href="#sa11y"
+                    class="project-nav-item"
+                    data-content="sa11y"
+                  >
+                    <span class="project-nav-title">Sa11y</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#a11ycat"
+                    class="project-nav-item"
+                    data-content="a11ycat"
+                  >
+                    <span class="project-nav-title">a11ycat</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#figma-plugins"
+                    class="project-nav-item"
+                    data-content="figma-plugins"
+                  >
+                    <span class="project-nav-title">Figma Plugins</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="nav-section">
+              <h2 class="nav-section-title">Contact</h2>
+              <div class="contact-links">
+                <a
+                  href="https://github.com/lukeylias"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/lukeylias/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="https://x.com/lukeydesign"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>Twitter(X)</span>
+                </a>
+              </div>
+            </section>
+          </nav>
         </div>
-      </nav>
-    </header>
-    <main>
-      <!-- hero section  -->
-      <section id="#hero">
-        <h1>Hey I'm Luke!</h1>
-        <p class="subtitle">
-          Senior product designer at <a href="">nib</a> occasionally like to
-          dabble in development from time to time
+      </aside>
+
+      <!-- Right content area -->
+      <div class="right-column">
+        <div id="content-area">
+          <!-- About content (default) will be loaded here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Hidden content templates -->
+    <template id="about-content">
+      <section id="about">
+        <img src="assets/me.jpg" alt="Luke Ylias" class="about-profile-image" />
+        <p>
+          Senior Product Designer at nib. occassionaly like to dabble in
+          development.
         </p>
-        <div class="tag-container">
-          <p>this site is a work in progress</p>
-        </div>
-      </section>
-      <section id="#social">
-        <div class="social-container">
-          <div class="social-link">
-            <div class="social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <a
-              href="https://github.com/lukeylias"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </div>
-          <div class="social-link">
-            <div class="social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/lukeylias/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-          </div>
-          <div class="social-link">
-            <div class="social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 25 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 8.56675C12 8.56675 7.87619 0.22183 2.70999 1.05903C-0.906331 1.64506 2.17634 10.571 3.21796 12.0702C4.25958 13.5694 6.32331 12.5684 6.32331 12.5684C6.32331 12.5684 0.640808 14.0699 5.29012 18.5743C9.73023 22.876 12 16.0718 12 16.0718"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12.1523 8.62388C12.1523 8.62388 16.2762 0.278959 21.4424 1.11616C25.0587 1.70219 21.976 10.6281 20.9344 12.1273C19.8928 13.6265 17.829 12.6255 17.829 12.6255C17.829 12.6255 23.5115 14.127 18.8622 18.6314C14.4221 22.9331 12.1523 16.129 12.1523 16.129"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <a
-              href="https://bsky.app/profile/lukeylias.bsky.social"
-              target="_blank"
-              rel="noopener noreferrer"
-              >BlueSky</a
-            >
-          </div>
-        </div>
       </section>
 
       <div class="section-divider"></div>
 
-      <!-- Projects Section -->
-      <h2>Selected work</h2>
-      <section class="projects">
-        <div class="project" data-modal="project-meta-1">
-          <div class="project-media">
-            <img
-              src="assets/accessibilitynib.png"
-              alt="Accessibility at nib project placeholder"
-            />
-          </div>
-          <div class="project-details">
-            <div class="horizontal-wrapper">
-              <h3 class="project-title">Accessibility at nib</h3>
-              <div class="tag-container">
-                <p>WIP</p>
-              </div>
-            </div>
-            <p class="project-description">
-              Internal accessibility website for nib employees to learn about
-              accessibility and how to implement it in their work.
-            </p>
-          </div>
-
-          <div class="expandable-content" id="project-meta-1">
-            <div class="modal-video">
-              <iframe
-                src="https://www.loom.com/embed/7fc3ab417c594a879f9bf007719fd8cd?sid=7d8d4e5a-8a9b-4a42-9c8b-2e1f6a3b8c5d"
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-                style="
-                  width: 100%;
-                  height: 400px;
-                  border-radius: 8px;
-                  margin-bottom: 2rem;
-                "
-              >
-              </iframe>
-            </div>
-            <div class="content-pairing">
-              <h2>Impact</h2>
-              <ul>
-                <li class="meta-list">
-                  Adopted by majority of nib product teams
-                </li>
-                <li class="meta-list">
-                  Single source of truth for accessibility guidelines
-                </li>
-              </ul>
-            </div>
-            <div class="content-pairing">
-              <h2>Key Learnings:</h2>
-              <ul>
-                <li class="meta-list">
-                  It's hard to get momentum on accessibility without buy in
-                </li>
-                <li class="meta-list">
-                  People are often usure where to start with accessibility,
-                  having open conversations helps
-                </li>
-              </ul>
-            </div>
-            <p>
-              I'll continue to add more details around this project soon. At the
-              moment, it's very high-level.
-            </p>
-          </div>
-        </div>
-
-        <div class="project" data-modal="project-meta-2">
-          <div class="project-media">
-            <img
-              src="assets/secureMessaging.png"
-              alt="Secure messaging interface"
-            />
-          </div>
-          <div class="project-details">
-            <div class="horizontal-wrapper">
-              <h3 class="project-title">Secure messaging</h3>
-              <div class="tag-container">
-                <p>WIP</p>
-              </div>
-            </div>
-            <p class="project-description">
-              I was the lead designer on a project to introduce in-app messaging
-              so customers could reach support directly from their banking app —
-              one of my favourite projects to date.
-            </p>
-          </div>
-
-          <div class="expandable-content" id="project-meta-2">
-            <p class="description">
-              We wanted to bring Greater’s reputation for friendly, in-person
-              service into a digital context and make getting help feel more
-              personal and immediate.
-            </p>
-            <p class="description">
-              This project was deeply rewarding — we helped make banking
-              assistance more human and accessible. Through testing, we found
-              the feature supported a wide range of customers who faced
-              different challenges and accessibility needs.
-            </p>
-            <p class="description">
-              <span class="flourish-text">"I would change banks for this"</span>
-              – User Testing participant / Non-Greater customer.
-            </p>
-            <div>
-              <p class="description">
-                For a deeper dive, you can view the full design journey and
-                documentation in this
-                <a href="" class="description">figjam file</a>
-              </p>
-            </div>
-
-            <div class="modal-divider"></div>
-
-            <div class="content-pairing">
-              <h2>Impact</h2>
-
-              <ul>
-                <li class="meta-list">
-                  Over 90% satistifaction from users in testing
-                </li>
-                <li class="meta-list">
-                  Estimated 30% reduction in customer support calls
-                </li>
-                <li class="meta-list">
-                  Scalable design across Web, iOS and Android
-                </li>
-              </ul>
-            </div>
-            <div class="content-pairing">
-              <h2>Key Learnings:</h2>
-              <ul>
-                <li class="meta-list">
-                  People are hesitant about using chatbots inside their banking
-                  apps
-                </li>
-                <li class="meta-list">
-                  Chats can be a high security risk with people giving over
-                  personal details
-                </li>
-                <li class="meta-list">
-                  When building the same feature across multiple platforms,
-                  especially native applications, try and use what comes out of
-                  the box. That way, it's easier to maintain in the long term
-                </li>
-                <li class="meta-list">
-                  People would rather talk to a real human than a chatbot
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="project" data-modal="project-meta-3">
-          <div class="project-media">
-            <img
-              src="assets/dynamicType.png"
-              alt="iOS Dynamic Type Scale interface"
-            />
-          </div>
-          <div class="project-details">
-            <div class="horizontal-wrapper">
-              <h3 class="project-title">iOS Dynamic Type Scale</h3>
-              <div class="tag-container">
-                <p>WIP</p>
-              </div>
-            </div>
-            <p class="project-description">
-              A Figma resource to help people understand how dynamic type
-              changes user fonts and improve accessibility in iOS development.
-            </p>
-          </div>
-
-          <div class="expandable-content" id="project-meta-3">
-            <p class="description">
-              While working at Greater Bank, I had the opportunity to learn
-              about iOS development and explore the accessibility features in
-              iPhones, particularly around dynamic type.
-            </p>
-            <div class="content-pairing">
-              <h2>Impact</h2>
-              <ul>
-                <li class="meta-list">Downloaded by hundreds of designers</li>
-                <li class="meta-list">
-                  Helps teams understand iOS accessibility features
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p class="description">
-                You can check out the full Figma file here:
-                <a
-                  href="https://www.figma.com/community/file/1286182397891733539"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="description"
-                  >Figma Community</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <section class="personal-section">
-      <div class="personal-container">
-        <h2>Thanks for reading</h2>
-        <p>
-          Feel free to connect with me on social media or check out my GitHub!
+      <section id="intro">
+        <h2>About</h2>
+        <p class="description">
+          At nib, I own experimentation for the sales team. I identify what to
+          test, design and code variants in Optimizely and React, and analyse
+          results. I also standardised accessibility practices across the
+          organisation, which led to an invitation to speak alongside Dylan
+          Alcott on International Accessibility Day.
         </p>
-        <div class="social-container social-dark">
-          <div class="social-link">
-            <div class="social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  fill="currentColor"
-                />
-              </svg>
+        <p class="description">
+          I've been integrating AI into my workflow since local LLMs became
+          viable. I've built custom MCPs that connect models directly to design
+          system documentation, and created an automated accessibility auditor
+          that scans code against WCAG standards. I'm interested in how AI can
+          remove friction from design operations, not replace the thinking.
+        </p>
+        <p class="description">
+          Before nib, I spent four years at Greater Bank during their digital
+          transformation. I designed the native iOS and Android experiences from
+          scratch, built their first design system, and led the migration from
+          Sketch to Figma. I also shipped a secure messaging feature that made a
+          non-customer say, "I would change banks for this."
+        </p>
+        <p class="description">
+          I think in systems, ship in code, and build tools when something's
+          missing. I've mentored ~14 designers on experimentation and
+          accessibility, pitched directly to divisional leadership to secure
+          investment in design infrastructure, and collaborate regularly across
+          disciplines: legal, content, marketing, design ops, and front-line
+          staff.
+        </p>
+        <p class="description">
+          My goal is to simplify complexity: take abstract problems and turn
+          them into digestible parts that teams can act on. I draw connections
+          across people, product, and process to create clarity, and I bring
+          others along on that journey.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section id="principles">
+        <h2>Principles</h2>
+        <p class="description">
+          <strong class="highlight">I think in first principles.</strong> I
+          break problems down to their core before jumping into solutions.
+        </p>
+        <p class="description">
+          <strong class="highlight"
+            >I look for opportunities to help others grow.</strong
+          >
+          If something helps me, I find ways to share it. A process, a tool, a
+          guild, whatever makes the knowledge stick.
+        </p>
+        <p class="description">
+          <strong class="highlight">I simplify to create clarity.</strong>
+          Abstract problems become digestible parts that people can actually
+          work with.
+        </p>
+        <p class="description">
+          <strong class="highlight">Accessibility matters to me.</strong> It's a
+          culture, not a checklist. That's why I built Sa11y and started
+          a11ycats.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section id="education">
+        <h2>Education</h2>
+        <p class="description">
+          <strong>University of Newcastle</strong> | 2019<br />
+          Bachelor of Visual Communication Design<br />
+          Graduated with Distinction
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+    </template>
+
+    <!-- nib template -->
+    <template id="nib-content">
+      <div class="work-header">
+        <img src="assets/nib.jpg" alt="nib logo" class="company-logo" />
+        <div class="work-header-content">
+          <h1 class="company-name">nib</h1>
+          <p class="work-meta">Senior Product Designer · 2023–Present</p>
+        </div>
+      </div>
+
+      <p class="description">
+        nib is one of Australia's fastest-growing health funds, offering health
+        coverage to over 1,000,000 people nationwide. We also provide health
+        insurance for international visitors and students coming to Australia.
+      </p>
+
+      <p class="description">
+        As the sole designer on the Sales team, my responsibility was to enhance
+        the usability of the sales funnels and ultimately increase overall
+        sales.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>IWHI Funnel Redesign</h2>
+
+      <div class="content-section">
+        <p class="description">
+          The project started as a straightforward technical rebuild: migrate
+          the International Workers Health Insurance funnel to Next.js and
+          replicate what already existed. No scope for changes.
+        </p>
+
+        <p class="description">
+          I saw this as a missed opportunity. I asked the product manager if
+          there was a fixed deadline and whether we could use this rebuild as an
+          opportunity to address known issues and refresh the design language.
+          The answer was yes.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/iwhi-before.jpg"
+            alt="Before/after comparison"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          The original IWHI funnel (before redesign)
+        </p>
+
+        <p class="description">
+          I dug into ContentSquare and past research. The existing funnel was
+          built for users with high intent to join, which alienated anyone just
+          shopping around for prices. There were significant drop-offs
+          throughout, users looping back because key information wasn't
+          persisted, and a mobile experience that was broken in places. The UI
+          hadn't been updated in years.
+        </p>
+
+        <p class="description">
+          I shaped a vision for the new funnel: simplify the visuals, improve
+          content hierarchy, separate the quote experience from the join
+          experience, and give users the context they need upfront. Transparency
+          around pricing, clearer expectations, meaningful colour choices, and a
+          responsive layout that actually works.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/iwhi-select-cover.jpg"
+            alt="New funnel UI or products page"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          The redesigned IWHI product selection page
+        </p>
+
+        <p class="description">
+          I also jumped into the codebase. The initial implementation was
+          inconsistent, so I built a layout component to standardise the
+          experience across pages and worked through the funnel to align
+          typography, colour, and responsiveness with the design system.
+        </p>
+
+        <p class="description">
+          I advocated for a new carousel component, prototyped it on GitHub, and
+          co-designed it with the design ops team to get it into the Mesh design
+          system. It's now part of the new funnel.
+        </p>
+
+        <p class="description">
+          <a
+            href="https://lukeylias.github.io/carrousel-concept/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="description"
+            >Carousel concept</a
+          >
+        </p>
+
+        <!-- TODO: Add finished carousel implementation asset later
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/placeholder.png"
+            alt="Finished carousel implementation"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          The finished carousel component in production
+        </p>
+        -->
+
+        <p class="description">
+          The project goes live after Christmas. Internal testing has been well
+          received, accessibility feedback from users with lived experiences has
+          been positive, and we've validated key assumptions by running
+          experiments in the existing funnel and carrying those insights
+          forward.
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Internal offer management tool</h2>
+
+      <div class="content-section">
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/Offers-Landing-Page.jpg"
+            alt="Offer management tool screenshot"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">Internal offer management dashboard</p>
+
+        <p class="description">
+          The operations team was losing months each year to a manual,
+          fragmented process for creating and fulfilling offers, relying on
+          legacy tools that delayed marketing campaigns and introduced errors.
+        </p>
+
+        <p class="description">
+          I designed a modern interface in close collaboration with the
+          marketing team, running regular feedback sessions to ensure we were
+          solving the right problems. I shaped the frontend architecture to
+          simplify backend integration, and contributed production React code to
+          hit a tight deadline.
+        </p>
+
+        <p class="description">
+          Offer creation dropped from weeks to minutes. Near-zero error rates.
+          Roughly two months of labour saved annually.
+        </p>
+
+        <p class="description">
+          One thing that stuck with me, using a "best, better, good" framework
+          made prioritisation conversations with stakeholders far easier, it
+          helped everyone see the tradeoffs between ideal and MVP.
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Experimentation at nib</h2>
+
+      <div id="experimentation" class="content-section">
+        <p class="description">
+          When the experimentation team was disbanded, ownership of Optimizely
+          transferred to my team. Before taking it on, I sat down with the
+          outgoing team to understand what worked, what didn't, and where the
+          pain points were. The biggest issue was that velocity experiments took
+          too long to plan, run, and learn from.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/nib-exp.jpg"
+            alt="Experimentation process"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          Lean experimentation process overview
+        </p>
+
+        <p class="description">
+          I built a lean experimentation process designed for speed: identify
+          issues through data (ContentSquare, Google Analytics), form a testable
+          hypothesis tied to a business outcome, design and develop variants,
+          and run. I handle the full end-to-end from analysis through to
+          building variants in Optimizely using HTML, CSS, and JavaScript, or
+          routing directly in React.
+        </p>
+
+        <p class="description">
+          One experiment stands out: I noticed high bounce rates and low scroll
+          depth on our quote funnel entry point. My hypothesis was that the
+          value exchange wasn't clear enough and users saw too many fields
+          before seeing products. I designed variations that addressed this. The
+          result was
+          <strong class="highlight"
+            >13% more users reaching the quote stage</strong
+          >.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/contentsquare.jpg"
+            alt="ContentSquare"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">Data analysis using ContentSquare</p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand video"
+        >
+          <video
+            src="assets/videos/exp.mp4"
+            class="project-media-image"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="project-media-caption">
+          Demo of an experimentation variant in Optimizely
+        </p>
+
+        <p class="description">
+          The process I created has since been adopted by other teams across the
+          division similar to the accessibility playbook, it gave people a
+          framework they could run with independently.
+        </p>
+
+        <p class="description">
+          Not every experiment wins. I redesigned our product cards based on
+          solid design rationale, but it underperformed users were more attached
+          to the familiar layout than I expected. That's the point though:
+          experimentation lets you test assumptions cheaply before committing
+          engineering effort to something that might not move the needle.
+        </p>
+
+        <p class="description">
+          One shift I pushed for was rethinking how we pick metrics. The
+          previous approach often measured vanity metrics clicks on a button,
+          for example rather than outcomes that matter to the business. I
+          introduced proxy metrics tied to conversion, so even when we can't
+          measure the final outcome directly, we're still learning something
+          meaningful.
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Accessibility at nib</h2>
+
+      <div class="content-section">
+        <p class="description">
+          Accessibility at nib was reactive—no standardised auditing, no
+          measurement, no consistent process. This became a real problem when
+          partner inquiries about compliance revealed gaps that put commercial
+          relationships at risk.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand video"
+        >
+          <video
+            src="assets/videos/accessibilitynibsite.mp4"
+            class="project-media-image"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="project-media-caption">
+          The internal Accessibility Playbook site
+        </p>
+
+        <p class="description">
+          I built an internal Playbook site with video tutorials and a clear
+          framework teams could actually follow. To scale it, I launched
+          a11ycats—an internal guild—and ran a company-wide roadshow to train
+          teams on integrating accessibility into their workflow, not just
+          tacking it on at the end.
+        </p>
+
+        <p class="description">
+          Multiple product teams now use the playbook as part of their process.
+          <strong
+            >I was invited to speak alongside Dylan Alcott on International
+            Accessibility Day to share what we'd built.</strong
+          >
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/meatnib.jpeg"
+            alt="Accessibility at nib initiative"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          International Accessibility Day presentation alongside Dylan Alcott
+        </p>
+
+        <p class="description">
+          The biggest shift wasn't tooling—it was culture. Accessibility became
+          a conversation, not a checkbox.
+        </p>
+      </div>
+    </template>
+
+    <!-- Greater Bank template -->
+    <template id="greater-bank-content">
+      <div class="work-header">
+        <img
+          src="assets/gblogo.jpg"
+          alt="Greater Bank logo"
+          class="company-logo"
+        />
+        <div class="work-header-content">
+          <h1 class="company-name">Greater Bank</h1>
+          <p class="work-meta">UX Designer · 2019–2023</p>
+        </div>
+      </div>
+
+      <p class="description">
+        Greater Bank is a customer-owned banking institution serving over
+        170,000 customers across New South Wales. As a customer-owned bank,
+        Greater Bank focuses on delivering personalized service and competitive
+        financial products to local communities.
+      </p>
+
+      <p class="description">
+        As UX Designer, I was responsible for reimagining the digital banking
+        experience across web and mobile platforms, ensuring accessibility and
+        ease of use for all customers.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>Secure Messaging</h2>
+
+      <div class="content-section">
+        <p class="description">
+          When COVID hit and branches started closing, Greater Bank needed a way
+          to bring its signature in-person service into the app. The board had
+          been watching neobanks closely—but we weren't trying to copy them. We
+          wanted to translate the trust and conversational tone that Greater was
+          known for into a digital experience.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/gb-frontline.jpg"
+            alt="Frontline staff collaboration"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          Sitting with frontline staff to understand the in-branch customer
+          experience
+        </p>
+
+        <p class="description">
+          I was the sole designer on a team of four engineers, a product
+          manager, a business analyst, and a senior researcher. We started
+          broad: a customer survey to understand which in-branch tasks people
+          felt comfortable doing online, followed by staff interviews to learn
+          how frontline workers actually built trust with customers. We assessed
+          competitor messaging features using the Kano model and tested those
+          findings with over 100 non-Greater customers.
+        </p>
+
+        <div class="project-media-container">
+          <iframe
+            style="
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 100%;
+              height: 450px;
+            "
+            src="https://embed.figma.com/deck/5RVqWehUsOwS5ABTOcFMAA/Untitled?node-id=1-301&viewport=-2542%2C-234%2C1.07&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+            allow="fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="project-media-caption">
+          Kano Model analysis of messaging features
+        </p>
+
+        <p class="description">
+          From there, I prototyped a direction and tested it with 8 users to
+          validate our assumptions around the core experience—things like
+          initiating a conversation, response expectations, and feeling
+          supported.
+        </p>
+
+        <p class="description">
+          The biggest constraint was technical: we were integrating with
+          Genesis, a third-party system, and needed the experience to feel
+          cohesive across iOS, Android, and web despite platform differences. A
+          lot of my work was figuring out how to maintain consistency without
+          forcing sameness.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/messaging.jpg"
+            alt="Final UI across platforms or early concepts"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">ios implimentation</p>
+
+        <p class="description">
+          <strong>"I would change banks for this"</strong> — feedback from a
+          non-Greater customer during testing. It validated that we weren't just
+          solving a logistics problem; we'd created something people genuinely
+          wanted.
+        </p>
+
+        <p class="description">
+          This project shaped how I think about translating physical experiences
+          into digital ones—starting with the people who deliver the service,
+          not just the people who use it.
+        </p>
+
+        <div class="project-media-container">
+          <iframe
+            style="
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 100%;
+              height: 450px;
+            "
+            src="https://embed.figma.com/board/pDf3TBo3T9QjQDse5oDXPY/Messaging-case-study?node-id=0-1&embed-host=share"
+            allow="fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="project-media-caption">Secure messaging case study board</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Stacks Design System</h2>
+
+      <div class="content-section">
+        <p class="description">
+          When I joined Greater Bank, design lived in Sketch with a painful
+          check-in/check-out process—no cloud collaboration, constant version
+          conflicts, and non-designers completely locked out. I'd been watching
+          Figma since it launched and saw an opportunity.
+        </p>
+
+        <p class="description">
+          I proposed a one-month pilot: I'd work exclusively in Figma with my
+          product team, developers, researchers, and content designers, then
+          report back with findings. The result was a resounding
+          yes—collaboration improved immediately, friction dropped, and the only
+          real pain point (converting Sketch files) was already solved by
+          Figma's import tool. We made the switch.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/figma-slide.jpg"
+            alt="Figma workspace or team collaboration"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">Friction points before figma</p>
+
+        <p class="description">
+          The design system grew alongside this. Initially it was a side
+          project—no formal buy-in, just something we maintained because it made
+          our work faster. That changed when a merger was announced and we'd
+          need to support multiple brands.
+        </p>
+
+        <p class="description">
+          I saw the opening. The executive of our digital transformation
+          division asked for a business case they could take to the board. I
+          built one: an accessibility-first, iterative design system grounded in
+          best practices I'd gathered from reaching out to design ops people in
+          the community, including folks at Figma. It got sign-off.
+        </p>
+
+        <div class="project-media-container">
+          <iframe
+            style="
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 100%;
+              height: 450px;
+            "
+            src="https://embed.figma.com/proto/gzpkGor1wev67WPKt510p4/Design-systems-pitch?page-id=201%3A36&node-id=202-48&viewport=660%2C729%2C0.03&scaling=contain&content-scaling=fixed&starting-point-node-id=202%3A48&embed-host=share"
+            allow="fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="project-media-caption">Design systems pitch deck prototype</p>
+
+        <p class="description">
+          I also created a pitch deck to communicate the value to teams across
+          the division—what a design system is, how it would help velocity, why
+          it mattered. It built momentum.
+        </p>
+
+        <p class="description">
+          The constraint was resources: no dedicated team, so it had to be built
+          alongside other work. I evaluated tools and landed on Supernova
+          because it worked with Style Dictionary, allowing design tokens to
+          flow into iOS, Android, and web through a single source of truth.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/gb-design-system.jpg"
+            alt="Greater Bank Stacks design system landing"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          Greater Bank Stacks design system documentation landing page
+        </p>
+
+        <p class="description">
+          The V1 included foundational styles (colour, typography, iconography),
+          base components for iOS, Android, and web, accessibility guidelines,
+          content principles, and coded examples in Storybook. It was
+          comprehensive—not a component library, but a proper system.
+        </p>
+
+        <p class="description">
+          All four squads in the division adopted it. Developers saw roughly
+          <strong class="highlight">40% faster build times</strong> by reusing
+          components instead of rebuilding from scratch. Designers stopped
+          spending days recreating the same patterns. Beyond velocity, it
+          brought cohesion—a single source of truth that aligned teams who'd
+          previously been working in silos.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/gb-ui-kit.jpg"
+            alt="Android UI kit"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">Android UI kit</p>
+        <p class="description">
+          <a
+            href="https://www.figma.com/design/5AnWfjd3ZA5NvvqObQ9vFG/Stacks-%E2%80%93-Demo-file?node-id=1-3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="description"
+            style="font-size: 1rem"
+            >Check out the refined UI kit here</a
+          >
+        </p>
+
+        <p class="description">
+          I handed it off when I left Greater Bank, passing it to the team
+          overseeing the merger to scale across brands.
+        </p>
+      </div>
+    </template>
+
+    <!-- University of Newcastle template -->
+    <template id="university-of-newcastle-content">
+      <div class="work-header">
+        <img
+          src="assets/uonlogo.jpg"
+          alt="University of Newcastle logo"
+          class="company-logo"
+        />
+        <div class="work-header-content">
+          <h1 class="company-name">University of Newcastle</h1>
+          <p class="work-meta">Student Designer · 2017</p>
+        </div>
+      </div>
+
+      <p class="description">
+        The University of Newcastle is a public research university serving over
+        37,000 students across multiple campuses in New South Wales. As a
+        student designer, I worked on various projects that supported the
+        university's digital presence and student experience initiatives.
+      </p>
+
+      <p class="description">
+        During my time at the university, I collaborated with various
+        departments to create digital solutions that improved student engagement
+        and streamlined administrative processes.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>Student Portal Redesign</h2>
+
+      <div class="content-section">
+        <p class="description">
+          The existing student portal was fragmented across multiple systems,
+          creating confusion for students trying to access essential services
+          like enrollment, timetables, and academic records. Students were
+          spending excessive time navigating between different platforms to
+          complete basic tasks.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/placeholder.png"
+            alt="Student portal interface"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          The redesigned student portal dashboard
+        </p>
+
+        <p class="description">
+          I conducted user research with students across different faculties to
+          understand their primary needs and pain points. Based on these
+          insights, I designed a unified portal interface that consolidated key
+          services into a single, intuitive dashboard.
+        </p>
+
+        <p class="description">
+          The redesign focused on reducing cognitive load by grouping related
+          functions together and providing clear visual hierarchy. I worked
+          closely with the development team to ensure the design was technically
+          feasible within the existing university systems.
+        </p>
+
+        <p class="description">
+          User testing showed a <strong class="highlight">35% reduction</strong>
+          in time spent navigating to key services, and student satisfaction
+          scores improved significantly. The new portal became the foundation
+          for future student experience improvements.
+        </p>
+      </div>
+    </template>
+
+    <!-- Websites and App template -->
+    <!-- a11ycat template -->
+    <template id="a11ycat-content">
+      <div class="work-header">
+        <div class="work-header-content">
+          <h1 class="company-name">a11ycat</h1>
+          <p class="work-meta">Side Project</p>
+        </div>
+      </div>
+
+      <p class="description">
+        An AI-powered accessibility auditor that scans code against WCAG
+        standards.
+      </p>
+
+      <p class="description">
+        I wanted to integrate accessibility checks directly into the QA workflow
+        rather than treating it as an afterthought. a11ycat uses a custom Model
+        Context Protocol to connect an LLM to WCAG documentation, then scans
+        code and flags issues with plain-language explanations.
+      </p>
+
+      <div
+        class="project-media-container expandable-media"
+        role="button"
+        tabindex="0"
+        aria-label="Expand video"
+      >
+        <video
+          src="assets/videos/a11ycatdemo.mp4"
+          class="project-media-image"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="project-media-caption">
+        a11ycat AI accessibility auditing demo
+      </p>
+
+      <p class="description">
+        Part of my broader exploration into how AI can remove friction from
+        design operations without replacing the thinking.
+      </p>
+
+      <p class="description">
+        <a
+          href="https://github.com/lukeylias/a11ycat"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="description"
+          >Check out the repo on GitHub</a
+        >
+      </p>
+    </template>
+
+    <!-- Figma Plugins template -->
+    <template id="figma-plugins-content">
+      <div class="work-header">
+        <div class="work-header-content">
+          <h1 class="company-name">Figma Plugins</h1>
+          <p class="work-meta">Side Project</p>
+        </div>
+      </div>
+
+      <p class="description">
+        Tools I've built to reduce friction and speed up design workflows.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>DesignSync</h2>
+
+      <div class="content-section">
+        <p class="description">
+          Standardises file organisation to reduce developer handoff friction
+          and improve discoverability. Built with TypeScript and React.
+        </p>
+
+        <div
+          class="project-media-container"
+          style="
+            position: relative;
+            padding-bottom: 55.04587155963303%;
+            height: 0;
+          "
+        >
+          <iframe
+            src="https://www.loom.com/embed/906ac6e40553443bb58429bfa3fbdb9e?autoplay=false"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            allow="fullscreen"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p class="project-media-caption">
+          DesignSync plugin workflow demonstration
+        </p>
+
+        <p class="description">
+          <a
+            href="https://github.com/lukeylias/designSync"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="description"
+            >Check out the repo on GitHub</a
+          >
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Playbook</h2>
+
+      <div class="content-section">
+        <p class="description">
+          Generates key UI patterns instantly to accelerate prototyping for the
+          wider design team.
+        </p>
+
+        <div
+          class="project-media-container"
+          style="position: relative; padding-bottom: 56.25%; height: 0"
+        >
+          <iframe
+            src="https://www.loom.com/embed/e0a3feae30734c2db91cf9cb8297430e?autoplay=false"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            allow="fullscreen"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <p class="project-media-caption">
+          Playbook plugin generating UI patterns
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>iOS Dynamic Type Scale</h2>
+
+      <div class="content-section">
+        <p class="description">
+          A reference for designing with Apple's Dynamic Type system. Helps
+          designers understand how text scales across accessibility sizes.
+        </p>
+
+        <div
+          class="project-media-container expandable-media"
+          role="button"
+          tabindex="0"
+          aria-label="Expand image"
+        >
+          <img
+            src="assets/CleanShot_2025-12-17_at_10.26.46_2x-9ef7e969-729e-40b3-ac74-5883bfd8c85f.png"
+            alt="iOS Dynamic Type Scale"
+            class="project-media-image"
+          />
+        </div>
+        <p class="project-media-caption">
+          iOS Dynamic Type Scale reference tool
+        </p>
+
+        <p class="description">
+          <a
+            href="https://www.figma.com/community/file/1286182397891733539/ios-dynamic-type-scale"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="description"
+            >Check out the Figma file</a
+          >
+        </p>
+      </div>
+    </template>
+
+    <!-- Old templates removed -->
+    <template id="secure-messaging-content">
+      <h1 class="modal-project-title">Secure messaging</h1>
+      <div class="modal-hero-images">
+        <img
+          src="assets/secureMessaging.png"
+          alt="Secure messaging interface"
+        />
+      </div>
+      <div class="modal-section">
+        <h2>Project Overview & Context</h2>
+        <div class="modal-content-block">
+          <p class="description">
+            In early 2020, as COVID-19 forced branch closures, Greater Bank
+            faced a sharp rise in customer service calls and limited in-person
+            support.
+          </p>
+          <p class="description">
+            Our goal was to design and deliver a secure in-app messaging feature
+            across mobile and web platforms — giving customers a safe, remote
+            way to communicate with support staff.
+          </p>
+          <div class="project-meta-grid">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Company</div>
+              <div class="project-meta-value">Greater Bank</div>
             </div>
-            <a
-              href="https://github.com/lukeylias"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </div>
-          <div class="social-link">
-            <div class="social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  fill="currentColor"
-                />
-              </svg>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Year</div>
+              <div class="project-meta-value">2020–2021</div>
             </div>
-            <a
-              href="https://linkedin.com/in/lukeylias"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
+            <div class="project-meta-item">
+              <div class="project-meta-label">Role</div>
+              <div class="project-meta-value">Sole Product Designer</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Team</div>
+              <div class="project-meta-value">
+                PM, BA, iOS Dev, Android Dev, Web Dev
+              </div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Focus Areas</div>
+              <div class="project-meta-value">
+                Accessibility, Security, Service UX, Cross-platform design
+              </div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Timeline</div>
+              <div class="project-meta-value">~6 months (2020–2021)</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <img src="assets/lyliasfavi.png" alt="" class="nav-logo" />
-      <p>Designed and coded by me</p>
-    </footer>
+      <div class="modal-divider"></div>
 
-    <!-- Modal Structure -->
-    <div id="project-modal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="modal-close">&times;</button>
+      <div class="modal-section">
+        <h2>Problem Statement</h2>
+        <div class="modal-content-block">
+          <p class="description">
+            Customers who relied heavily on face-to-face assistance suddenly had
+            no way to resolve issues due to branch closures.
+          </p>
+          <p class="description">
+            Leadership wanted a modern, neo-bank-style chat experience — but our
+            user base skewed older and less digitally confident.
+          </p>
+          <p class="description">
+            We needed to design a trustworthy, human-centered messaging
+            experience that:
+          </p>
+          <div class="modal-list-wrapper">
+            <ul>
+              <li class="meta-list">
+                Recreated the helpfulness of in-person support
+              </li>
+              <li class="meta-list">
+                Protected sensitive financial information
+              </li>
+              <li class="meta-list">
+                Integrated with existing support workflows
+              </li>
+            </ul>
+          </div>
+          <p class="description">
+            How might we provide a digital support experience that feels as
+            personal and secure as visiting a branch?
+          </p>
         </div>
-        <div class="modal-body-container">
-          <div id="modal-body">
-            <!-- Content will be dynamically inserted here -->
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Research & Discovery</h2>
+        <div class="modal-content-block">
+          <div class="modal-subsection">
+            <h3>Staff Interviews</h3>
+            <p class="description">
+              We conducted call center interviews with a rough concept pitch.
+              Key insights:
+            </p>
+            <div class="modal-list-wrapper">
+              <ul>
+                <li class="meta-list">
+                  Strong enthusiasm for remote service options
+                </li>
+                <li class="meta-list">
+                  Major concerns about identity verification
+                </li>
+                <li class="meta-list">
+                  Messaging could significantly reduce troubleshooting friction
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-subsection">
+            <h3>Kano Model Analysis</h3>
+            <p class="description">
+              We evaluated neo-bank chat features with 20+ mobile banking users.
+              Key insights:
+            </p>
+            <div class="modal-list-wrapper">
+              <ul>
+                <li class="meta-list">Human interaction ranked highest</li>
+                <li class="meta-list">
+                  Bots were seen as impersonal and risky
+                </li>
+                <li class="meta-list">
+                  Persistent chat history increased trust
+                </li>
+              </ul>
+            </div>
+            <p class="description">
+              These insights shaped a clear direction: A secure, human-first
+              messaging channel, not an overly "chatty" or automated one.
+            </p>
+            <div class="modal-content-media">
+              <img src="assets/kano.png" alt="Kano Model Analysis" />
+            </div>
+            <p class="modal-content-caption">Kano Model Analysis results</p>
+          </div>
+
+          <div class="modal-subsection">
+            <h3>Customer Research</h3>
+            <p class="description">
+              We ran a customer survey to understand which banking tasks users
+              were comfortable handling online. Findings showed customers were
+              open to managing simple requests digitally (card limits, travel
+              notices) but needed reassurance around security for sensitive
+              tasks.
+            </p>
+            <div class="modal-content-media">
+              <img
+                src="assets/secure-messaging-insights.png"
+                alt="Secure messaging insights"
+              />
+            </div>
+            <p class="modal-content-caption">Customer research insights</p>
           </div>
         </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Design Process & Ideation</h2>
+        <div class="modal-content-block">
+          <div class="modal-subsection">
+            <h3>Competitive + Pattern Audit</h3>
+            <p class="description">
+              Instead of only auditing banking apps, I broadened research to
+              messaging platforms like Reddit, KakaoTalk, and LINE. Using
+              Jakob's Law, I identified familiar interaction patterns to reduce
+              cognitive load.
+            </p>
+          </div>
+
+          <div class="modal-subsection">
+            <h3>Experience Mapping</h3>
+            <p class="description">
+              Using insights from staff interviews, we mapped common support
+              tasks such as dispute handling and escalations, identifying
+              critical touchpoints.
+            </p>
+          </div>
+
+          <div class="modal-subsection">
+            <h3>Wireframing & Prototyping</h3>
+            <p class="description">
+              Created low-fidelity wireframes based on journey maps, ran
+              internal reviews with PM, BA, and compliance, and developed a
+              clickable prototype for testing. This iterative loop ensured
+              feasibility and usability early.
+            </p>
+            <div class="modal-content-media">
+              <img
+                src="assets/wireframe-sm.png"
+                alt="Wireframing and prototyping"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Solution & Design Decisions</h2>
+        <div class="modal-content-media">
+          <img
+            src="assets/handoff-sm.png"
+            alt="Solution and design decisions"
+          />
+        </div>
+        <div class="modal-content-block">
+          <div class="modal-subsection">
+            <h3>Key Decisions</h3>
+            <div class="modal-list-wrapper">
+              <ul>
+                <li class="meta-list">
+                  Leverage native OS components (iOS, Android) for familiarity
+                </li>
+                <li class="meta-list">
+                  Reinforce human connection with clear agent identification
+                </li>
+                <li class="meta-list">
+                  Integrate secure identity verification flows
+                </li>
+                <li class="meta-list">
+                  Ensure robust accessibility: contrast, type scaling, and focus
+                  states
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-subsection">
+            <h3>Artifacts</h3>
+            <p class="description">
+              Annotated designs were documented in Figma and shared with
+              development to support cross-platform consistency and future
+              reuse.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Challenges & Trade-offs</h2>
+        <div class="modal-content-block">
+          <div class="modal-list-wrapper">
+            <ul>
+              <li class="meta-list">
+                <strong>Cross-platform differences:</strong> Text inputs and
+                message interactions varied across iOS, Android, and Web,
+                requiring custom design solutions.
+              </li>
+              <li class="meta-list">
+                <strong>Security requirements:</strong> Balancing multi-factor
+                authentication with a smooth chat flow.
+              </li>
+              <li class="meta-list">
+                <strong>Scope constraints:</strong> Prioritized a stable
+                text-only MVP before adding rich media features.
+              </li>
+            </ul>
+          </div>
+          <p class="description">
+            Native components were used wherever possible, with bespoke parts
+            fed back into the evolving design system.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Results & Impact</h2>
+        <div class="modal-content-block">
+          <div class="modal-list-wrapper">
+            <ul>
+              <li class="meta-list">
+                90%+ user satisfaction from usability testing
+              </li>
+              <li class="meta-list">
+                Estimated 30–40% reduction in customer support call volume
+              </li>
+              <li class="meta-list">
+                Scalable implementation shipped across iOS, Android, and Web
+              </li>
+              <li class="meta-list">
+                Reusable patterns contributed back into the design system
+              </li>
+              <li class="meta-list">
+                Provided a critical support channel during COVID when branches
+                were closed
+              </li>
+            </ul>
+          </div>
+          <p class="description">
+            <span class="flourish-text">"I would change banks for this"</span>
+            – User Testing participant / Non-Greater customer.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Key Learnings & Reflections</h2>
+        <div class="modal-content-block">
+          <div class="modal-list-wrapper">
+            <ul>
+              <li class="meta-list">
+                Users prefer human support over bots, especially for sensitive
+                financial issues
+              </li>
+              <li class="meta-list">
+                Trust is influenced by security communication design, not just
+                backend security
+              </li>
+              <li class="meta-list">
+                Cross-platform accessibility needs to be planned earlier in the
+                workflow
+              </li>
+              <li class="meta-list">
+                Designing with call center staff created a more realistic and
+                effective solution
+              </li>
+              <li class="meta-list">
+                Personally meaningful project due to the direct impact during a
+                challenging period
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-section">
+        <h2>Bonus Content</h2>
+        <div class="modal-content-block">
+          <p class="description">
+            During this project, I recorded several videos documenting the
+            design process, research findings, and key decisions. You can find
+            them linked below.
+          </p>
+          <div class="bonus-links">
+            <a
+              href="https://www.loom.com/share/d747aed852154c29a2d2c0d0172daa02"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="description bonus-link"
+            >
+              <span>Android demo</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <polyline
+                  points="15 3 21 3 21 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="10"
+                  y1="14"
+                  x2="21"
+                  y2="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.loom.com/share/4d444cb341964805b55360cdd6bbff93"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="description bonus-link"
+            >
+              <span>Across app messaging preposal</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <polyline
+                  points="15 3 21 3 21 9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line
+                  x1="10"
+                  y1="14"
+                  x2="21"
+                  y2="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Dynamic Type template -->
+    <template id="dynamic-type-content">
+      <div class="work-header">
+        <div class="work-header-content">
+          <h1 class="company-name">iOS Dynamic Type Scale</h1>
+          <p class="work-meta">Side Project · 2023</p>
+        </div>
+      </div>
+
+      <p class="description">
+        While working at Greater Bank, I had the opportunity to learn about iOS
+        development and explore the accessibility features in iPhones,
+        particularly around dynamic type.
+      </p>
+
+      <p class="description">
+        This project provides designers and developers with a comprehensive
+        reference for implementing dynamic type in iOS applications, ensuring
+        accessibility for all users.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>Key features</h2>
+
+      <p class="description">
+        A complete reference guide for iOS dynamic type scales, helping teams
+        design and build accessible interfaces that adapt to user preferences.
+      </p>
+
+      <ul>
+        <li class="meta-list">
+          Complete type scale reference for all iOS text styles
+        </li>
+        <li class="meta-list">
+          Visual examples showing how type scales at different sizes
+        </li>
+        <li class="meta-list">
+          Guidelines for implementing dynamic type in Figma
+        </li>
+        <li class="meta-list">
+          Best practices for maintaining readability across scales
+        </li>
+      </ul>
+
+      <div class="section-divider"></div>
+
+      <h2>Impact</h2>
+
+      <p class="description">
+        This resource has been widely adopted by the design community, helping
+        teams build more accessible iOS applications.
+      </p>
+
+      <ul>
+        <li class="meta-list">
+          Downloaded by hundreds of designers and developers
+        </li>
+        <li class="meta-list">
+          Helps teams understand and implement iOS accessibility features
+        </li>
+        <li class="meta-list">
+          Used as a reference in design systems and style guides
+        </li>
+      </ul>
+
+      <div class="section-divider"></div>
+
+      <h2>Resources</h2>
+
+      <p class="description">
+        <a
+          href="https://www.figma.com/community/file/1286182397891733539/ios-dynamic-type-scale"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="description"
+          >Check it out on the Figma community page</a
+        >
+      </p>
+    </template>
+
+    <!-- Design Playbook template -->
+    <template id="design-playbook-content">
+      <div class="work-header">
+        <div class="work-header-content">
+          <h1 class="company-name">Design Playbook</h1>
+          <p class="work-meta">Side Project · In Development</p>
+        </div>
+      </div>
+
+      <p class="description">
+        A comprehensive Figma plugin designed to streamline design workflows and
+        improve team collaboration through automated design system management.
+      </p>
+
+      <p class="description">
+        This tool helps design teams maintain consistency across their products
+        by providing quick access to design patterns, components, and best
+        practices directly within Figma.
+      </p>
+
+      <div class="section-divider"></div>
+
+      <h2>Planned features</h2>
+
+      <p class="description">
+        The plugin will offer a range of features to help teams work more
+        efficiently and maintain design consistency.
+      </p>
+
+      <ul>
+        <li class="meta-list">
+          Quick access to design system components and patterns
+        </li>
+        <li class="meta-list">
+          Automated consistency checks across design files
+        </li>
+        <li class="meta-list">Best practice recommendations and guidelines</li>
+        <li class="meta-list">Team collaboration and annotation tools</li>
+      </ul>
+
+      <div class="section-divider"></div>
+
+      <h2>Current status</h2>
+
+      <p class="description">
+        This project is currently in active development. More details and a
+        public release will be announced soon.
+      </p>
+
+      <ul>
+        <li class="meta-list">Core plugin architecture in development</li>
+        <li class="meta-list">User interface design in progress</li>
+        <li class="meta-list">Beta testing planned for early 2025</li>
+      </ul>
+    </template>
+
+    <!-- Sa11y template -->
+    <template id="sa11y-content">
+      <div class="work-header">
+        <div class="work-header-content">
+          <h1 class="company-name">Sa11y</h1>
+          <p class="work-meta">Side Project</p>
+        </div>
+      </div>
+
+      <p class="description">
+        A web accessibility tool that translates WCAG guidelines into plain
+        language.
+      </p>
+
+      <p class="description">
+        I built Sa11y because accessibility auditing is intimidating for
+        non-experts. Most tools assume you already understand WCAG. Sa11y
+        explains what's wrong and why it matters in terms anyone can follow.
+      </p>
+
+      <div
+        class="project-media-container expandable-media"
+        role="button"
+        tabindex="0"
+        aria-label="Expand video"
+      >
+        <video
+          src="assets/sa11y.mp4"
+          class="project-media-image"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="project-media-caption">
+        The Sa11y accessibility auditing tool interface
+      </p>
+
+      <p class="description">
+        The site itself is built to model best-in-class accessibility standards:
+        semantic HTML, clear hierarchy, and tested against the same criteria it
+        checks for.
+      </p>
+
+      <p class="description">
+        <a
+          href="https://sa11y.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="description"
+          >sa11y.com</a
+        >
+        ·
+        <a
+          href="https://github.com/lukeylias/sa11y"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="description"
+          >GitHub</a
+        >
+      </p>
+    </template>
+
+    <!-- Media Overlay -->
+    <div
+      id="media-overlay"
+      class="media-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Expanded media view"
+    >
+      <button class="media-overlay-close" aria-label="Close expanded view">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18M6 6l12 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="media-overlay-content">
+        <!-- Media content will be inserted here dynamically -->
       </div>
     </div>
 
-    <script>
-      // Navbar scroll effect
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
+    <script src="js/main.js"></script>
 
-      // Modal functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("project-modal");
-        const modalBody = document.getElementById("modal-body");
-        const closeButton = document.querySelector(".modal-close");
-
-        // Open modal when project card is clicked
-        const projectCards = document.querySelectorAll(".project");
-
-        projectCards.forEach((card) => {
-          card.addEventListener("click", function () {
-            const targetId = card.getAttribute("data-modal");
-            const expandableContent = document.getElementById(targetId);
-
-            // Skip if no expandable content exists
-            if (!expandableContent) return;
-
-            // Find the project title
-            const projectTitle =
-              card.querySelector(".project-title").textContent;
-
-            // Clone the content and put it in modal with title at the top
-            modalBody.innerHTML =
-              `<h1>${projectTitle}</h1>` + expandableContent.innerHTML;
-            modal.classList.add("modal-open");
-            document.body.style.overflow = "hidden"; // Prevent background scrolling
-          });
-        }); // Close modal when X is clicked
-        closeButton.addEventListener("click", function () {
-          modal.classList.remove("modal-open");
-          document.body.style.overflow = ""; // Restore scrolling
-        });
-
-        // Close modal when clicking outside content
-        modal.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            modal.classList.remove("modal-open");
-            document.body.style.overflow = ""; // Restore scrolling
-          }
-        });
-
-        // Close modal with Escape key
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && modal.classList.contains("modal-open")) {
-            modal.classList.remove("modal-open");
-            document.body.style.overflow = ""; // Restore scrolling
-          }
-        });
-
-        // Page transition effect
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        navLinks.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            const href = this.getAttribute("href");
-
-            // Only apply transition for different pages
-            if (href !== "index.html") {
-              e.preventDefault();
-
-              // Add fade out class
-              document.body.classList.add("fade-out");
-
-              // Navigate after fade out completes
-              setTimeout(() => {
-                window.location.href = href;
-              }, 300);
-            }
-          });
-        });
-      });
-    </script>
+    <p class="copyright">© lukeylias</p>
   </body>
 </html>
