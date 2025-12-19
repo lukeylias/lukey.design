@@ -35,6 +35,13 @@ function loadContent(contentId) {
 
       // Setup expandable media after content loads
       setupExpandableMedia();
+
+      // Setup media loading states (fade-in animations)
+      setupMediaLoadingStates();
+
+      // Setup lazy videos and iframes
+      setupLazyVideos();
+      setupLazyIframes();
     }, 150);
   }
 }
@@ -217,6 +224,80 @@ function setupContentTransitions() {
     contentArea.style.transition = "opacity 0.15s ease-in-out";
     contentArea.style.opacity = "1";
   }
+}
+
+// Media loading states - fade in images/videos when loaded
+function setupMediaLoadingStates() {
+  const mediaElements = document.querySelectorAll(".project-media-image");
+
+  mediaElements.forEach((media) => {
+    // For images that are already loaded (cached)
+    if (media.tagName === "IMG" && media.complete) {
+      media.classList.add("loaded");
+      media.closest(".project-media-container")?.classList.add("loaded");
+    }
+    // For videos that have enough data
+    else if (media.tagName === "VIDEO" && media.readyState >= 3) {
+      media.classList.add("loaded");
+      media.closest(".project-media-container")?.classList.add("loaded");
+    } else {
+      // Image load event
+      media.addEventListener("load", () => {
+        media.classList.add("loaded");
+        media.closest(".project-media-container")?.classList.add("loaded");
+      });
+      // Video loadeddata event
+      media.addEventListener("loadeddata", () => {
+        media.classList.add("loaded");
+        media.closest(".project-media-container")?.classList.add("loaded");
+      });
+    }
+  });
+}
+
+// Lazy load videos with Intersection Observer
+function setupLazyVideos() {
+  const videos = document.querySelectorAll("video[data-autoplay]");
+
+  if (videos.length === 0) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  videos.forEach((video) => observer.observe(video));
+}
+
+// Defer iframe loading with Intersection Observer
+function setupLazyIframes() {
+  const iframes = document.querySelectorAll("iframe[data-src]");
+
+  if (iframes.length === 0) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const iframe = entry.target;
+          iframe.src = iframe.dataset.src;
+          iframe.removeAttribute("data-src");
+          observer.unobserve(iframe);
+        }
+      });
+    },
+    { rootMargin: "100px" }
+  );
+
+  iframes.forEach((iframe) => observer.observe(iframe));
 }
 
 // Initialize on page load

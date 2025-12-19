@@ -53,6 +53,7 @@
               src="assets/lyliasfavi.png"
               alt="Luke Ylias logo"
               class="sidebar-logo"
+              loading="eager"
             />
             <h1 class="sidebar-name">Luke Ylias</h1>
           </a>
@@ -68,6 +69,7 @@
                       src="assets/nib.jpg"
                       alt="nib logo"
                       class="project-nav-icon"
+                      loading="lazy"
                     />
                     <span class="project-nav-title">nib</span>
                     <span class="project-nav-year">2023</span>
@@ -83,6 +85,7 @@
                       src="assets/gblogo.jpg"
                       alt="Greater Bank logo"
                       class="project-nav-icon"
+                      loading="lazy"
                     />
                     <span class="project-nav-title">Greater Bank</span>
                     <span class="project-nav-year">2019</span>
@@ -97,6 +100,7 @@
                       src="assets/uonlogo.jpg"
                       alt="University of Newcastle logo"
                       class="project-nav-icon"
+                      loading="lazy"
                     />
                     <span class="project-nav-title"
                       >University of Newcastle</span
@@ -228,7 +232,12 @@
     <!-- Hidden content templates -->
     <template id="about-content">
       <section id="about">
-        <img src="assets/me.jpg" alt="Luke Ylias" class="about-profile-image" />
+        <img
+          src="assets/me.jpg"
+          alt="Luke Ylias"
+          class="about-profile-image"
+          loading="lazy"
+        />
         <p>
           Senior Product Designer at nib. occassionaly like to dabble in
           development.
@@ -320,7 +329,12 @@
     <!-- nib template -->
     <template id="nib-content">
       <div class="work-header">
-        <img src="assets/nib.jpg" alt="nib logo" class="company-logo" />
+        <img
+          src="assets/nib.jpg"
+          alt="nib logo"
+          class="company-logo"
+          loading="lazy"
+        />
         <div class="work-header-content">
           <h1 class="company-name">nib</h1>
           <p class="work-meta">Senior Product Designer · 2023–Present</p>
@@ -367,6 +381,7 @@
             src="assets/iwhi-before.jpg"
             alt="Before/after comparison"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -400,6 +415,7 @@
             src="assets/iwhi-select-cover.jpg"
             alt="New funnel UI or products page"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -471,6 +487,7 @@
             src="assets/Offers-Landing-Page.jpg"
             alt="Offer management tool screenshot"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">Internal offer management dashboard</p>
@@ -524,6 +541,7 @@
             src="assets/nib-exp.jpg"
             alt="Experimentation process"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -560,6 +578,7 @@
             src="assets/contentsquare.jpg"
             alt="ContentSquare"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">Data analysis using ContentSquare</p>
@@ -573,10 +592,11 @@
           <video
             src="assets/videos/exp.mp4"
             class="project-media-image"
-            autoplay
+            data-autoplay
             loop
             muted
             playsinline
+            preload="metadata"
           >
             Your browser does not support the video tag.
           </video>
@@ -630,10 +650,11 @@
           <video
             src="assets/videos/accessibilitynibsite.mp4"
             class="project-media-image"
-            autoplay
+            data-autoplay
             loop
             muted
             playsinline
+            preload="metadata"
           >
             Your browser does not support the video tag.
           </video>
@@ -668,6 +689,7 @@
             src="assets/meatnib.jpeg"
             alt="Accessibility at nib initiative"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -688,6 +710,7 @@
           src="assets/gblogo.jpg"
           alt="Greater Bank logo"
           class="company-logo"
+          loading="lazy"
         />
         <div class="work-header-content">
           <h1 class="company-name">Greater Bank</h1>
@@ -731,6 +754,7 @@
             src="assets/gb-frontline.jpg"
             alt="Frontline staff collaboration"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -755,7 +779,7 @@
               width: 100%;
               height: 450px;
             "
-            src="https://embed.figma.com/deck/5RVqWehUsOwS5ABTOcFMAA/Untitled?node-id=1-301&viewport=-2542%2C-234%2C1.07&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+            data-src="https://embed.figma.com/deck/5RVqWehUsOwS5ABTOcFMAA/Untitled?node-id=1-301&viewport=-2542%2C-234%2C1.07&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
             allow="fullscreen"
             allowfullscreen
           ></iframe>
@@ -789,6 +813,7 @@
             src="assets/messaging.jpg"
             alt="Final UI across platforms or early concepts"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">ios implimentation</p>
@@ -813,7 +838,7 @@
               width: 100%;
               height: 450px;
             "
-            src="https://embed.figma.com/board/pDf3TBo3T9QjQDse5oDXPY/Messaging-case-study?node-id=0-1&embed-host=share"
+            data-src="https://embed.figma.com/board/pDf3TBo3T9QjQDse5oDXPY/Messaging-case-study?node-id=0-1&embed-host=share"
             allow="fullscreen"
             allowfullscreen
           ></iframe>
@@ -852,6 +877,7 @@
             src="assets/figma-slide.jpg"
             alt="Figma workspace or team collaboration"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">Friction points before figma</p>
@@ -878,7 +904,7 @@
               width: 100%;
               height: 450px;
             "
-            src="https://embed.figma.com/proto/gzpkGor1wev67WPKt510p4/Design-systems-pitch?page-id=201%3A36&node-id=202-48&viewport=660%2C729%2C0.03&scaling=contain&content-scaling=fixed&starting-point-node-id=202%3A48&embed-host=share"
+            data-src="https://embed.figma.com/proto/gzpkGor1wev67WPKt510p4/Design-systems-pitch?page-id=201%3A36&node-id=202-48&viewport=660%2C729%2C0.03&scaling=contain&content-scaling=fixed&starting-point-node-id=202%3A48&embed-host=share"
             allow="fullscreen"
             allowfullscreen
           ></iframe>
@@ -908,6 +934,7 @@
             src="assets/gb-design-system.jpg"
             alt="Greater Bank Stacks design system landing"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -940,6 +967,7 @@
             src="assets/gb-ui-kit.jpg"
             alt="Android UI kit"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">Android UI kit</p>
@@ -968,6 +996,7 @@
           src="assets/uonlogo.jpg"
           alt="University of Newcastle logo"
           class="company-logo"
+          loading="lazy"
         />
         <div class="work-header-content">
           <h1 class="company-name">University of Newcastle</h1>
@@ -1011,6 +1040,7 @@
             src="assets/placeholder.png"
             alt="Student portal interface"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -1071,10 +1101,11 @@
         <video
           src="assets/videos/a11ycatdemo.mp4"
           class="project-media-image"
-          autoplay
+          data-autoplay
           loop
           muted
           playsinline
+          preload="metadata"
         >
           Your browser does not support the video tag.
         </video>
@@ -1131,7 +1162,7 @@
           "
         >
           <iframe
-            src="https://www.loom.com/embed/906ac6e40553443bb58429bfa3fbdb9e?autoplay=false"
+            data-src="https://www.loom.com/embed/906ac6e40553443bb58429bfa3fbdb9e?autoplay=false"
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
@@ -1176,7 +1207,7 @@
           style="position: relative; padding-bottom: 56.25%; height: 0"
         >
           <iframe
-            src="https://www.loom.com/embed/e0a3feae30734c2db91cf9cb8297430e?autoplay=false"
+            data-src="https://www.loom.com/embed/e0a3feae30734c2db91cf9cb8297430e?autoplay=false"
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
@@ -1216,6 +1247,7 @@
             src="assets/CleanShot_2025-12-17_at_10.26.46_2x-9ef7e969-729e-40b3-ac74-5883bfd8c85f.png"
             alt="iOS Dynamic Type Scale"
             class="project-media-image"
+            loading="lazy"
           />
         </div>
         <p class="project-media-caption">
@@ -1241,6 +1273,7 @@
         <img
           src="assets/secureMessaging.png"
           alt="Secure messaging interface"
+          loading="lazy"
         />
       </div>
       <div class="modal-section">
@@ -1374,7 +1407,11 @@
               messaging channel, not an overly "chatty" or automated one.
             </p>
             <div class="modal-content-media">
-              <img src="assets/kano.png" alt="Kano Model Analysis" />
+              <img
+                src="assets/kano.png"
+                alt="Kano Model Analysis"
+                loading="lazy"
+              />
             </div>
             <p class="modal-content-caption">Kano Model Analysis results</p>
           </div>
@@ -1392,6 +1429,7 @@
               <img
                 src="assets/secure-messaging-insights.png"
                 alt="Secure messaging insights"
+                loading="lazy"
               />
             </div>
             <p class="modal-content-caption">Customer research insights</p>
@@ -1435,6 +1473,7 @@
               <img
                 src="assets/wireframe-sm.png"
                 alt="Wireframing and prototyping"
+                loading="lazy"
               />
             </div>
           </div>
@@ -1449,6 +1488,7 @@
           <img
             src="assets/handoff-sm.png"
             alt="Solution and design decisions"
+            loading="lazy"
           />
         </div>
         <div class="modal-content-block">
@@ -1843,10 +1883,11 @@
         <video
           src="assets/sa11y.mp4"
           class="project-media-image"
-          autoplay
+          data-autoplay
           loop
           muted
           playsinline
+          preload="metadata"
         >
           Your browser does not support the video tag.
         </video>
